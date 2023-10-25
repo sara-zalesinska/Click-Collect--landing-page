@@ -1,0 +1,25 @@
+.functions-section {
+    margin-top: 112px;
+    padding: 144px 0;
+    background-color: var(--bg-color-secondary);
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 82px;
+        margin-top: 72px;
+    }
+
+    &__item {
+        width: 328px;
+    }
+
+    &__function-description {
+        margin-top: 40px;
+        font-family: var(--font-primary);
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 180%;
+    }
+}
