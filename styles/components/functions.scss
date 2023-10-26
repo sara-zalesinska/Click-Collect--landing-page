@@ -6,11 +6,12 @@
     &__list {
         display: flex;
         justify-content: center;
-        gap: 82px;
+        gap: 32px;
         margin-top: 72px;
     }
 
     &__item {
+        // padding: 0 41px;
         width: 328px;
     }
 
