@@ -1,0 +1,60 @@
+.opinions-section {
+    padding: 144px 0;
+}
+
+.opinion-boxes {
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+    gap: 32px;
+}
+
+.opinion-box {
+    position: relative;
+    max-width: 687px;
+    padding: 64px;
+    background-color: var(--border-color);
+
+    &__citation-icon{
+        position: absolute;
+        right: 56px;
+        top: 48px;
+    }
+
+    &__opinion {
+        font-family: var(--font-primary);
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 180%;
+        margin-bottom: 40px;
+    }
+}
+
+.opinion-box-user-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__user-profile-picture {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+    }
+
+    &__user-data {
+          font-family: var(--font-primary);
+    }
+   
+    &__user-name {
+        color: var(--user-name-font-color);
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 160%;
+    }
+
+    &__user-proffession {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 160%;
+    }
+}
