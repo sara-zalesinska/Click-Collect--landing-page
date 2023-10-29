@@ -1,0 +1,29 @@
+.pricing-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 144px 256px 144px 249px;
+    gap: 71px;
+    background-color: var(--bg-color-pricing);
+
+    &__blob-pic {
+        position: absolute;
+        top: -168px;
+        right: 0;
+    }
+}
+
+.pricing-text-content {
+    width: 50%;
+
+    &__heading {
+        text-align: left;
+    }
+    &__paragraph {
+        margin: 72px 0;
+        font-family: var(--font-primary);
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 180%;
+    }
+}
