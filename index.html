@@ -166,7 +166,7 @@
            <img src="./images/icons/opinion-user-icon-two.png" alt="user's profile picture" class="opinion-box-user-info__user-profile-picture">
            <div class="opinion-box-user-info__user-data">
             <p class="opinion-box-user-info__user-name">Tomasz Zieliński</p>
-            <p class="opinion-box-user-info__user-proffession">Dyrektor IT, Corgix Sp. z o.o.</p>
+            <p class="opinion-box-user-info__user-proffession">Członek Zarządu, Net Systemts</p>
           </div>
           </div>
         </div>
@@ -175,13 +175,43 @@
       <section class="pricing-section">
         <div class="pricing-text-content">
           <h2 class="pricing-text-content__heading section-title">Cennik</h2>
-          <p class="pricing-text-content__paragraph">Oferujemy elastyczne plany rozliczeniowe, dostosowane do indywidualnych potrzeb każdego klienta. Zachęcamy do bezpośredniego kontaktu, aby omówić szczegóły i znaleźć najkorzystniejsze dla Ciebie rozwiązanie. Skontaktuj się z nami już dziś, aby dowiedzieć się więcej.</p>
+          <p class="pricing-text-content__paragraph">Oferujemy <span class="bold">elastyczne plany rozliczeniowe</span>, dostosowane do indywidualnych potrzeb każdego klienta. Zachęcamy do bezpośredniego kontaktu, aby omówić szczegóły i znaleźć najkorzystniejsze dla Ciebie rozwiązanie. <span class="bold">Skontaktuj się z nami już dziś</span>, aby dowiedzieć się więcej.</p>
           <button class="pricing-text-content__button button">Skontaktuj się z nami</button>
         </div>
         <div class="pricing-visual-content">
           <img src="./images/pics/smartphone-pricing-pic.png" alt="smartphone in a hand" class="pricing-visual-content__smartphone-pic">
         </div>
         <img src="./images/blobs/blob-pricing.png" alt="" class="pricing-section__blob-pic">
+      </section>
+      <section class="contact-section">
+        <h2 class="contact-section__heading section-title">Kontakt</h2>
+        <img src="./images/pics/robot-contact-pic.png" alt="a robot holding a tablet" class="contact-section__robot-pic">
+        <img src="/images/pics/robot-shadow-pic.png" alt="a robot shadow" class="contact-section__robot-shadow">
+        <form action="" class="contact-form">
+          <fieldset>
+            <select id="contact-matter">
+              <option value=""  disabled selected>W jakiej sprawie się kontaktujesz?* 
+              </option>
+              <option value="">Option 1</option>
+              <option value="">Option 2</option>
+              <option value="">Option 3</option>
+              <option value="">Option 4</option>
+            </select>
+            <input type="email" value="Email*">
+            <input type="text" value="Telefon">
+            <textarea id="message" class="contact-message">Wiadomość*</textarea>
+            <div class="privacy-policy">
+            <input type="checkbox" id="data-processing-checkbox">
+            <label for="data-processing-checkbox" class="privacy-policy__message">* Wyrażam zgodę na przetwarzanie moich danych osobowych przez PIQ.one w związku ze złożonym przeze mnie zapytaniem. Więcej informacji w <a href="#" class="privacy-policy__link" >polityce prywatności</a>.</label>
+            </div>
+            <span class="warning-message">Musisz uzupełnić wszystkie pola obowiązkowe!</span>
+          </fieldset>
+          <div class="contact-section__bottom">
+            <button class="contact-section__submit-btn button">Wyślij wiadomość</button>
+          <p class="contact-section__legend">*pola obowiązkowe</p>
+          </div>
+          
+        </form>
       </section>
    </main>
     <script type="module" src="/main.js"></script>
