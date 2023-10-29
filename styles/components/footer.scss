@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 24px 0;
+
+    &__list-elements,
+    &__company-info,
+    &__link {
+        font-family: var(--font-primary);
+        font-size: 1.6rem;
+        line-height: 200%;
+        color: black;
+        opacity: .4;
+    }
+
+    &__link {
+        opacity: .8;
+    }
+
+
+}
