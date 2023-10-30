@@ -40,3 +40,15 @@ html {
   font-weight: 500;
   color: var(--btn-header-color);
 }
+
+@media (max-width:992px) {
+  .section-title {
+    font-size: 4.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 4.3rem;
+  }
+  }
