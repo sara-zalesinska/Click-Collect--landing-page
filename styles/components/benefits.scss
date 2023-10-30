@@ -28,6 +28,8 @@
          gap: 32px;
         padding-top: 72px;
         width: 100%;
+        z-index: 1
+        ;
     }
 
     &__list-item {
@@ -59,6 +61,7 @@
 
 
 .divider {
+    display: none;
     position: relative;
     width: 100vw;
     min-height: 512px;
@@ -81,4 +84,99 @@
 
 }
 
+@media (max-width:1670px) {
+    .benefits-section {
+        &__blob {
+            &--blue {
+                width: 18%;
+                top: -30%;
+            }
 
+            &--light-green {
+                bottom: -35%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1144px) {
+    .benefits-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 144px 105px;
+
+        &__blob {
+            &--blue {
+                width: 18%;
+                top: -28%;
+            }
+
+            &--green {
+                z-index: -1;
+            }
+
+            &--light-green {
+                width: 36%;
+            }
+        }
+
+        &__list {
+            justify-content: center;
+        }
+
+        &__list-item {
+            height: unset;
+
+        }
+    }
+}
+@media (max-width: 992px) {
+    .benefits-section {
+
+        &__blob {
+
+            &--light-green {
+                width: 50%;
+                bottom: -21%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-section {
+        
+        &__blob {
+            &--blue {
+                width: 30%;
+                top: -10%;
+            }
+
+            &--light-green {
+                width: 80%;
+                bottom: -21%;
+            }
+        }
+         &__description {
+            font-size: 1.6rem;
+        }
+    }
+       
+    }
+
+
+    @media (max-width: 576px) {
+        .benefits-section {
+            &__blob {
+    
+                &--light-green {
+                    width: 80%;
+                    bottom: -10%;
+                }
+            }
+            &__list {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
