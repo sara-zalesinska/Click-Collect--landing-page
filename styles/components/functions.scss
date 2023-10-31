@@ -52,6 +52,10 @@
 @media (max-width: 576px) {
     .functions-section {
         padding: 114px 0;
+
+        &__heading {
+            padding-top: 84px;
+        }
         &__function-description {
             font-size: 1.5rem;
         }

@@ -107,3 +107,9 @@
         min-height: unset;
     }
 }
+
+@media (max-width: 576px) {
+    .opinions-section {
+        padding: 86px 2rem;
+    }
+}
