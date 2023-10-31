@@ -60,29 +60,29 @@
 }
 
 
-.divider {
-    display: none;
-    position: relative;
-    width: 100vw;
-    min-height: 512px;
-    margin-top: 144px;
-    background-color: var(--border-color);
-    z-index: -1;
+// .divider {
+//     display: none;
+//     position: relative;
+//     width: 100vw;
+//     min-height: 512px;
+//     margin-top: 144px;
+//     background-color: var(--border-color);
+//     z-index: -1;
     
-    &__smartphone-pic {
-        position: absolute;
-        top: -30%;
-        left: 13%;
-        z-index: 1;
-    }
+//     &__smartphone-pic {
+//         position: absolute;
+//         top: -30%;
+//         left: 13%;
+//         z-index: 1;
+//     }
 
-    &__laptop-pic {
-        position: absolute;
-        top: -12%;
-        right: 0%;
-    }
+//     &__laptop-pic {
+//         position: absolute;
+//         top: -12%;
+//         right: 0%;
+//     }
 
-}
+// }
 
 @media (max-width:1670px) {
     .benefits-section {
@@ -177,6 +177,23 @@
             }
             &__list {
                 grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+
+
+    @media (max-width: 450px) {
+        .benefits-section {
+            &__blob--green {
+                left: -76px;
+            }
+        }
+    }
+
+    @media (max-width: 375px) {
+        .benefits-section {
+            &__blob--green {
+                left: -135px;
             }
         }
     }

@@ -1,14 +1,15 @@
 .functions-section {
     margin-top: 112px;
-    padding: 144px 0;
     background-color: var(--bg-color-secondary);
-
+    &__heading {
+        padding-top: 144px;
+    }
     &__list {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 32px;
-        padding: 72px;
+        padding: 72px 0 ;
     }
 
     &__item {
