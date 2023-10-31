@@ -72,14 +72,14 @@ textarea {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
 
-select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-}
+// select {
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+// }
 
-select::-ms-expand {
-    display: none;
-  }
+// select::-ms-expand {
+//     display: none;
+//   }
 
 #data-processing-checkbox {
     margin: 0;

@@ -23,32 +23,38 @@ import 'swiper/css/autoplay'
             Autoplay,
         ]
        
-     
-        // breakpoints: {
-        //     768: {
-        //         slidesPerView: 1,
-        //         spaceBetween: 20,
-        //     }
-        // },
+
       });
 
 
 
-// document.querySelector('#app').innerHTML = `
-//   <div>
-//     <a href="https://vitejs.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `
 
+      const nav = document.querySelector('.nav');
+      const navBtn = document.querySelector('.burger-btn');
+      const navItems = document.querySelectorAll('.nav__list-elemnt')
+
+
+      const handleNav = () => {
+        nav.classList.toggle('nav--active')
+
+         navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            nav.classList.remove('nav--active')
+        })
+      })
+        handleNavItemsAnimation();
+      }
+
+     
+
+      const handleNavItemsAnimation = () => {
+        let delayTime = 0;
+
+        navItems.forEach(item => {
+            item.classList.toggle('nav-items-animation')
+            item.style.animationDelay = '.' + delayTime + 's';
+            delayTime++;
+        })
+      }
+
+      navBtn.addEventListener('click', handleNav)
