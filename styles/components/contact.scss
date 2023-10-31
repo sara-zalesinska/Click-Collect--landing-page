@@ -230,7 +230,19 @@ textarea {
 
 }
 
+@media (max-width: 480px) {
+    .contact-form {
+     padding: 35px;
+    }
+     
+ }
+
+
 @media (max-width: 400px) {
+
+    .contact-form {
+        padding: 30px;
+       }
 
     input,
     select,
@@ -256,3 +268,5 @@ textarea {
     }
     
     }
+
+
