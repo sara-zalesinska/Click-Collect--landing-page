@@ -6,6 +6,7 @@
     align-items: center;
     padding: 144px 0;
     background-color: var(--border-color);
+    overflow: hidden;
 
     &__bottom {
         margin-top: 24px;
@@ -54,6 +55,7 @@
 fieldset {
 display: flex;
 flex-direction: column;
+min-width: 100%;
 }
 
 input,
@@ -101,3 +103,156 @@ select::-ms-expand {
     font-weight: 700;
     color: var(--warning-message-color);
 }
+
+
+@media (max-width:1200px) {
+    .contact-section {
+        &__robot-pic {
+            left: -42px;
+            bottom: 252px;
+            opacity: .5;
+            width: 100%;
+        }
+
+        &__heading {
+            z-index: 1;
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .contact-form {
+        width: 80%;
+    }
+
+
+input,
+select,
+textarea {
+    font-size: 1.7rem;
+}
+
+
+.privacy-policy {
+    &__message {
+        font-size: 1.3rem;
+    }
+}
+
+.contact-section {
+    &__legend {
+        font-size: 1.3rem;
+    }
+}
+
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+        &__bottom {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__legend {
+            align-self: flex-end;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+input,
+select,
+textarea {
+    font-size: 1.6rem;
+}
+
+
+.privacy-policy {
+    &__message {
+        font-size: 1.2rem;
+    }
+}
+
+.contact-section {
+    &__legend {
+        font-size: 1.2rem;
+    }
+}
+
+}
+
+@media (max-width: 576px) {
+input,
+select,
+textarea {
+    font-size: 1.5rem;
+}
+
+
+.privacy-policy {
+    &__message {
+        font-size: 1.1rem;
+    }
+}
+
+.contact-section {
+    &__legend {
+        font-size: 1.1rem;
+    }
+}
+
+}
+
+@media (max-width: 470px) {
+
+input,
+select,
+textarea {
+    font-size: 1.1rem;
+}
+
+
+.privacy-policy {
+    &__message {
+        font-size: 1rem;
+    }
+}
+
+.contact-section {
+    &__legend {
+        font-size: 1rem;
+    }
+}
+
+}
+
+@media (max-width: 400px) {
+
+    input,
+    select,
+    textarea {
+        font-size: .9rem;
+    }
+    
+    
+    .privacy-policy {
+        &__message {
+            font-size: .8rem;
+        }
+    }
+    
+    .contact-section {
+        &__legend {
+            font-size: .8rem;
+        }
+    }
+
+    .warning-message {
+        font-size: 1rem;
+    }
+    
+    }
