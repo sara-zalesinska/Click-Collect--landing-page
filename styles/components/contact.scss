@@ -52,16 +52,21 @@
     resize: vertical;
 }
 
-fieldset {
+.app-fieldset {
 display: flex;
 flex-direction: column;
 min-width: 100%;
+
+&__box {
+    margin-bottom: 24px;
+}
 }
 
-input,
-select,
-textarea {
-    margin-bottom: 24px;
+.app-input,
+.app-select,
+.app-textarea {
+    // margin-bottom: 24px;
+    width: 100%;
     padding: 13px 17px;
     font-family: var(--font-primary);
     font-size: 1.8rem;
@@ -69,8 +74,20 @@ textarea {
     opacity: 0.5;
     border-radius: 6px;
     border: 1px solid var(--input-border-color);
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+    &:focus {
+        outline: none;
+        border-color: var(--btn-header-color);
+        box-shadow: 0 0 0 0.125em rgba(62,142,208,.25);
+       
+    } 
 }
+
+.app-textarea {
+    margin-top: 24px;
+}
+
+
 
 // select {
 //     -moz-appearance: none;
@@ -83,9 +100,17 @@ textarea {
 
 #data-processing-checkbox {
     margin: 0;
+    padding: 9px 2px;
+    width: 5%;
+    align-self: flex-start;
+    // -moz-appearance:none;
+    // -webkit-appearance:none;
+    // -o-appearance:none;
 }
 
 .privacy-policy {
+    display: flex;
+    align-items: center;
     margin-bottom: 24px;
 
     &__message {
@@ -96,14 +121,26 @@ textarea {
     }
 }
 
-.warning-message {
-    align-self: flex-end;
+// .warning-message {
+//     align-self: flex-end;
+//     font-family: var(--font-primary);
+//     font-size: 1.2rem;
+//     font-weight: 700;
+//     color: var(--warning-message-color);
+//     display: none;
+// }
+.empty-field-warning-message {
     font-family: var(--font-primary);
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--warning-message-color);
+    margin: 11px 0 0 11px;
+    display: none;
 }
 
+.empty-field {
+    border: 1px solid var(--warning-message-color);
+}
 
 @media (max-width:1200px) {
     .contact-section {
@@ -127,9 +164,9 @@ textarea {
     }
 
 
-input,
-select,
-textarea {
+.app-input,
+.app-select,
+.app-textarea {
     font-size: 1.7rem;
 }
 
@@ -164,9 +201,9 @@ textarea {
 
 @media (max-width: 768px) {
 
-input,
-select,
-textarea {
+.app-input,
+.app-select,
+.app-textarea {
     font-size: 1.6rem;
 }
 
@@ -186,9 +223,9 @@ textarea {
 }
 
 @media (max-width: 576px) {
-input,
-select,
-textarea {
+.app-input,
+.app-select,
+.app-textarea {
     font-size: 1.5rem;
 }
 
@@ -210,9 +247,9 @@ textarea {
 
 @media (max-width: 470px) {
 
-input,
-select,
-textarea {
+.app-input,
+.app-select,
+.app-textarea {
     font-size: 1.1rem;
 }
 
@@ -245,9 +282,9 @@ textarea {
         padding: 30px;
        }
 
-    input,
-    select,
-    textarea {
+    .app-input,
+    .app-select,
+    .app-textarea {
         font-size: .9rem;
     }
     
@@ -264,7 +301,7 @@ textarea {
         }
     }
 
-    .warning-message {
+    .empty-field-warning-message {
         font-size: 1rem;
     }
     

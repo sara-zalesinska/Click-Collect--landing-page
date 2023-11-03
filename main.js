@@ -36,13 +36,23 @@ import 'swiper/css/autoplay'
 
       const handleNav = () => {
         nav.classList.toggle('nav--active')
+        navOpen();
 
          navItems.forEach(item => {
         item.addEventListener('click', () => {
             nav.classList.remove('nav--active')
+            document.body.style.overflow = 'auto'
         })
       })
         handleNavItemsAnimation();
+      }
+
+      const navOpen = () => {
+        if (nav.classList.contains('nav--active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
       }
 
      
@@ -58,3 +68,46 @@ import 'swiper/css/autoplay'
       }
 
       navBtn.addEventListener('click', handleNav)
+
+
+
+
+      const contactFormInputs = document.querySelectorAll('.app-form-essential')
+      const contactFormCheckbox = document.querySelector('#data-processing-checkbox')
+      const contactFormTextArea = document.querySelector('.app-textarea')
+      const contactFormSendBtn = document.querySelector('.contact-section__submit-btn')
+      const contactFormWarningMsg = document.querySelectorAll('.empty-field-warning-message')
+      const fieldset = document.querySelector('.app-fieldset')
+
+   
+
+      const handleInputValidation = () => {
+        
+       contactFormInputs.forEach((input)=> {
+         if(input.value === '') {
+           input.classList.add('empty-field')
+           contactFormWarningMsg.forEach((message)=> {
+            message.style.display = 'block'
+           })
+        //    contactFormCheckbox.style.borderColor = 'red'
+          } else {
+            input.classList.remove('empty-field')
+            // contactFormCheckbox.style.borderColor = '#D1D5DB'
+          }
+       })
+      }
+
+    //   const handleTextAreaValidation = () => {
+    //         if(contactFormTextArea.value === '') {
+    //             contactFormTextArea.classList.add('empty-field')
+    //         }
+ 
+
+    //   }
+
+     
+
+      fieldset.addEventListener('click', handleInputValidation);
+      contactFormSendBtn.addEventListener('click', handleInputValidation);
+     
+    //   contactFormSendBtn.addEventListener('click', handleTextAreaValidation);

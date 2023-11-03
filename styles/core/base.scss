@@ -4,6 +4,10 @@
     padding: 0;
   }
 
+  img {
+    pointer-events: none;
+  }
+
   .container {
     width: 100%;
     // max-width: 2000px;
@@ -22,6 +26,8 @@
   }
 }
 
+
+
 @media (max-width: 768px) {
   .container {
     padding: 0 10rem !important;
@@ -36,9 +42,11 @@
 
 html {
 	font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-.button {
+
+.app-button {
   width: 263px;
   height: 75px;
   border-radius: 100px;
@@ -50,10 +58,22 @@ html {
   color: var(--bg-color-main);
   border: none;
   cursor: pointer;
+  transition: background-color .3s;
+
+
+  &:hover {
+    background-color: var(--btn-header-color-hovered);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--btn-header-color);
+    box-shadow: 0 0 0 0.195em rgba(62,142,208,.65);         
+  }
 }
 
 @media (max-width: 1300px) {
-  .button {
+  .app-button {
     width: 256px;
     height: 70px;
     font-size: 1.7rem;
@@ -61,7 +81,7 @@ html {
 }
 
 @media (max-width: 1100px) {
-  .button {
+  .app-button {
     width: 245px;
     height: 65px;
     font-size: 1.6rem;
@@ -69,7 +89,7 @@ html {
 }
 
 @media (max-width: 430px) {
-  .button {
+  .app-button {
     width: 225px;
     height: 60px;
     font-size: 1.4rem;
