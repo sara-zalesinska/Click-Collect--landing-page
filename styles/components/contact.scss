@@ -121,15 +121,17 @@ min-width: 100%;
     }
 }
 
-// .warning-message {
-//     align-self: flex-end;
-//     font-family: var(--font-primary);
-//     font-size: 1.2rem;
-//     font-weight: 700;
-//     color: var(--warning-message-color);
-//     display: none;
-// }
-.empty-field-warning-message {
+.warning-message {
+    align-self: flex-start;
+    // font-family: var(--font-primary);
+    // font-size: 1.2rem;
+    // font-weight: 700;
+    // color: var(--warning-message-color);
+    // display: none;
+}
+
+.empty-field-warning-message,
+.warning-message {
     font-family: var(--font-primary);
     font-size: 1.2rem;
     font-weight: 700;
@@ -138,8 +140,12 @@ min-width: 100%;
     display: none;
 }
 
-.empty-field {
+.error {
     border: 1px solid var(--warning-message-color);
+}
+
+.success {
+    border: 1px solid var(--success);
 }
 
 @media (max-width:1200px) {

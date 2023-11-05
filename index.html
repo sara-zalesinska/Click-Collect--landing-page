@@ -237,21 +237,21 @@
           <fieldset class="app-fieldset">
             <div class="app-fieldset__box">
                <select id="contact-matter" class="app-select app-form-essential" >
-              <option value=""  disabled selected>W jakiej sprawie się kontaktujesz?* 
+              <option value="0"  disabled selected>W jakiej sprawie się kontaktujesz?* 
               </option>
-              <option value="">Option 1</option>
-              <option value="">Option 2</option>
-              <option value="">Option 3</option>
-              <option value="">Option 4</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
             </select>
             <p class="empty-field-warning-message">To pole nie może być puste</p>
             </div>
             <div class="app-fieldset__box">
-              <input class="app-input app-form-essential" type="email"  value="" placeholder="Email*">
+              <input class="app-input app-form-essential app-input-email" type="email"  value="" placeholder="Email*">
             <p class="empty-field-warning-message">To pole nie może być puste</p>
             </div>
             <div class="app-fieldset__box">
-              <input class="app-input " type="number" value="" placeholder="Telefon">
+              <input class="app-input" type="number" value="" placeholder="Telefon">
             <textarea id="message" class="contact-message app-textarea app-form-essential" placeholder="Wiadomość*"></textarea>
             <p class="empty-field-warning-message">To pole nie może być puste</p>
             </div>
@@ -259,7 +259,7 @@
             <input class="app-input app-input-checkbox app-form-essential " type="checkbox" id="data-processing-checkbox">
             <label for="data-processing-checkbox" class="privacy-policy__message">* Wyrażam zgodę na przetwarzanie moich danych osobowych przez PIQ.one w związku ze złożonym przeze mnie zapytaniem. Więcej informacji w <a href="#" class="privacy-policy__link" >polityce prywatności</a>.</label>
             </div>
-            <span class="warning-message">Musisz uzupełnić wszystkie pola obowiązkowe!</span>
+            <span class="warning-message">Musisz wyrazić zgodę na przetwarzanie danych osobowych!</span>
           </fieldset>
           <div class="contact-section__bottom">
             <button class="contact-section__submit-btn app-button">Wyślij wiadomość</button>
