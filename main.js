@@ -5,7 +5,10 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules'
 import 'swiper/css/autoplay'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
+AOS.init();
 
     const swiper = new Swiper('.swiper', {
         speed: 200,

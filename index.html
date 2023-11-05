@@ -11,12 +11,14 @@
   </head>
   <body>
     <nav class="top">
-        <img src="./images/pics/Logo.png" alt="piq one logo icon" class="top__logo">
+        <a href="#start"><img src="./images/pics/Logo.png" alt="piq one logo icon" class="top__logo"></a>
+        
         <button class="burger-btn">
           <div class="burger-btn__box">
             <div class="burger-btn__bars"></div>
           </div>
         </button>
+
         <div class="nav">
           <ul class="nav__list">
             <li class="nav__list-elemnt"><a href="#start" class="nav__list-link">Start</a></li>
@@ -25,7 +27,12 @@
             <li class="nav__list-elemnt"><a href="#opinions" class="nav__list-link">Opinie</a></li>
             <li class="nav__list-elemnt"><a href="#pricing" class="nav__list-link">Cennik</a></li>
             <li class="nav__list-elemnt"><a href="#contact" class="nav__list-link">Kontakt</a></li>
+            <li class="nav__list-elemnt"><select name="lang" id="language-select" class="nav__lang-select">
+              <option value="1">PL</option>
+              <option value="2">EN</option>
+            </select></li>
           </ul>
+          
         </div>
       </nav>
    <header class="header">
@@ -38,12 +45,12 @@
              <h1 class="bottom-left-upper__heading">Click&Collect 2.0</h1>
           <p class="bottom-left-upper__paragraph">Nowoczesne, <span class="bold">wspierane przez AI</span>, rozwiązania umożliwiające ekspresowe odbiory zamówień </p>
           </div>
-         <div class="bottom-left-lower">
-          <div class="bottom-left-lower__description">
+         <div class="bottom-left-lower" >
+          <div class="bottom-left-lower__description" >
             <img src="./images/icons/clipboard-icon.png" alt="cliboard icon" class="bottom-left-lower__icon">
             <p class="bottom-left-lower__paragraph">Lepiej <span class="bold">organizuj i poprawiaj wydajność pracowników </span>zaangażowanych w proces Click&Collect</p>
           </div>
-          <div class="bottom-left-lower__description">
+          <div class="bottom-left-lower__description" >
             <img src="./images/icons/hand-parcel-icon.png" alt="hand holding a parcel" class="bottom-left-lower__icon">
             <p class="bottom-left-lower__paragraph"><span class="bold">Zaoferuj swoim klientom nową jakość </span>podczas dokonywania zakupów online</p>
           </div>
@@ -65,25 +72,25 @@
     <section id="functions" class="functions-section container">
       <h2 class="functions-section__heading section-title">Funkcje</h2>
       <ul class="functions-section__list">
-        <li class="functions-section__item">
+        <li class="functions-section__item" data-aos="fade-up">
           <img src="./images/icons/dart-board-icon.png" alt="dart board icon" class="functions-section__function-icon">
           <p class="functions-section__function-description">
             Zaawansowany, <span class="bold">oparty na AI</span>, system zarządzania i obsługi procesu sprzedaży w modelu <span class="bold">Click&Collect</span>
           </p>
         </li>
-        <li class="functions-section__item">
+        <li class="functions-section__item" data-aos="fade-up">
           <img src="./images/icons/laptop-icon.png" alt="laptop icon" class="functions-section__function-icon">
           <p class="functions-section__function-description">
             Intuicyjna aplikacja dla pracowników <span class="bold">optymalnie organizująca pracę</span> oraz umożliwiająca <span class="bold">automatyzację procesów</span> 
           </p>
         </li>
-        <li class="functions-section__item">
+        <li class="functions-section__item" data-aos="fade-up">
           <img src="./images/icons/notepad-icon.png" alt="notepad icon" class="functions-section__function-icon">
           <p class="functions-section__function-description">
             <span class="bold">Dynamiczne i skalowalne harmonogramy pracy</span> osób zaangażowanych w proces przygotowywania zamówień
           </p>
         </li>
-        <li class="functions-section__item">
+        <li class="functions-section__item" data-aos="fade-up">
           <img src="./images/icons/smartphone-icon.png" alt="smarthone with shopping bags icon" class="functions-section__function-icon">
           <p class="functions-section__function-description">
             Przyjazna <span class="bold">aplikacja dla klientów</span> zwiększająca wygodę dokonywania zakupów
@@ -96,49 +103,49 @@
       <img src="./images/blobs/blob-benefits-green.png" alt="" class="benefits-section__blob--green">
       <h2 class="benefits-section__heading section-title">Korzyści</h2>
       <ul class="benefits-section__list">
-        <li class="benefits-section__list-item">
+        <li class="benefits-section__list-item" data-aos="fade-up">
           <img src="./images/icons/clock-icon.png" alt="clock icon" class="benefits-section__icon">
           <p class="benefits-section__description">
             W momencie składania zamówienia klient zna rzeczywistą godzinę odbioru
           </p>
         </li>
-        <li class="benefits-section__list-item">
+        <li class="benefits-section__list-item" data-aos="fade-up">
           <img src="./images/icons/shop-icon.png" alt="shop icon" class="benefits-section__icon">
           <p class="benefits-section__description">
             Zwiększenie wydajności przygotowywania zamówień
           </p>
         </li>
-        <li class="benefits-section__list-item">
+        <li class="benefits-section__list-item" data-aos="fade-up">
           <img src="./images/icons/cart-icon.png" alt="shopping cart icon" class="benefits-section__icon">
           <p class="benefits-section__description">
             Zastosowanie w dotychczasowych lub nowych sklepach internetowych
           </p>
         </li>
-        <li class="benefits-section__list-item">
+        <li class="benefits-section__list-item" data-aos="fade-up">
           <img src="./images/icons/smartphone-icon-small.png" alt="" class="benefits-section__icon">
           <p class="benefits-section__description">
             Duże możliwości zwiększania skali, zaczynając nawet od incydentalnych zamówień
           </p>
         </li>
-        <li class="benefits-section__list-item">
+        <li class="benefits-section__list-item" data-aos="fade-up">
           <img src="./images/icons/tick-icon.png" alt="a green tick icon" class="benefits-section__icon">
           <p class="benefits-section__description">
             Okazja na odróżnienie się od konkurencji
           </p>
         </li>
-        <li class="benefits-section__list-item">
+        <li class="benefits-section__list-item" data-aos="fade-up">
           <img src="./images/icons/clock-fast-icon.png" alt="clock icon" class="benefits-section__icon">
           <p class="benefits-section__description">
             Skrócenie czasu oczekiwania do minimum
           </p>
         </li>
-        <li class="benefits-section__list-item">
+        <li class="benefits-section__list-item" data-aos="fade-up">
           <img src="./images/icons/person-icon.png" alt="person with parcels icon" class="benefits-section__icon">
           <p class="benefits-section__description">
             Elastyczne okna odbioru
           </p>
         </li>
-        <li class="benefits-section__list-item">
+        <li class="benefits-section__list-item" data-aos="fade-up">
           <img src="./images/icons/stopwatch-icon.png" alt="stopwatch icon" class="benefits-section__icon">
           <p class="benefits-section__description">
             Aktualizacje w czasie rzeczywistym
@@ -148,14 +155,14 @@
       <img src="./images/blobs/blob-benefits-light.png" alt="" class="benefits-section__blob--light-green">
     </section>
     <section class="divider-section">
-     <div class="divider-section-container">
+     <div class="divider-section-container" data-aos="fade-up">
         <img src="./images/pics/laptop-pic-divider.png" alt="laptop" class="divider-section__image divider-section__image--right">
         <img src="./images/pics/smartphone-in-hand-divider-pic.png" alt="smartphone in a hand" class="divider-section__image divider-section__image--left">
       </div>
     </section>
       <section id="opinions" class="opinions-section">
         <h2 class="opinion-section__heading section-title">Opinie</h2>
-        <div class="opinion-boxes swiper">
+        <div class="opinion-boxes swiper"  data-aos="fade-up">
            <div class=" swiper-wrapper">
             <div class="swiper-slide">
            <div class="opinion-box">
@@ -219,9 +226,9 @@
        
       </section>
       <section id="pricing" class="pricing-section container">
-        <div class="pricing-text-content">
-          <h2 class="pricing-text-content__heading section-title">Cennik</h2>
-          <p class="pricing-text-content__paragraph">Oferujemy <span class="bold">elastyczne plany rozliczeniowe</span>, dostosowane do indywidualnych potrzeb każdego klienta. Zachęcamy do bezpośredniego kontaktu, aby omówić szczegóły i znaleźć najkorzystniejsze dla Ciebie rozwiązanie. <span class="bold">Skontaktuj się z nami już dziś</span>, aby dowiedzieć się więcej.</p>
+        <div class="pricing-text-content" >
+          <h2 class="pricing-text-content__heading section-title" data-aos="fade-up">Cennik</h2>
+          <p class="pricing-text-content__paragraph" data-aos="fade-up">Oferujemy <span class="bold">elastyczne plany rozliczeniowe</span>, dostosowane do indywidualnych potrzeb każdego klienta. Zachęcamy do bezpośredniego kontaktu, aby omówić szczegóły i znaleźć najkorzystniejsze dla Ciebie rozwiązanie. <span class="bold">Skontaktuj się z nami już dziś</span>, aby dowiedzieć się więcej.</p>
           <button class="pricing-text-content__button app-button">Skontaktuj się z nami</button>
         </div>
         <div class="pricing-visual-content">
@@ -233,7 +240,7 @@
         <h2 class="contact-section__heading section-title">Kontakt</h2>
         <img src="./images/pics/robot-contact-pic.png" alt="a robot holding a tablet" class="contact-section__robot-pic">
         <img src="/images/pics/robot-shadow-pic.png" alt="a robot shadow" class="contact-section__robot-shadow">
-        <form action="" class="contact-form">
+        <form action="" class="contact-form" data-aos="fade-up">
           <fieldset class="app-fieldset">
             <div class="app-fieldset__box">
                <select id="contact-matter" class="app-select app-form-essential" >
