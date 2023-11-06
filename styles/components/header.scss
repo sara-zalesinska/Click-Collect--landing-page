@@ -22,7 +22,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    padding: 20px;
+    padding: 2rem;
     width: 100vw;
     height: 100px;
     background-color: var(--bg-color-main);
@@ -50,7 +50,7 @@
         text-decoration: none;
         position: relative;
         border: 1px solid transparent;
-        padding: 4px;
+        padding: .4rem;
         border-radius: 8px;
         transition: color .3s;
 
@@ -93,7 +93,7 @@
 
     &__lang-select {
         align-self: center;
-        padding: 4px 6px;
+        padding: .4rem .6rem;
         font-family: var(--font-primary);
         font-size: 1.2rem;
         opacity: 0.5;
@@ -115,7 +115,7 @@
     position: relative;
     display: flex;
     // margin: 169px 0 0 256px;
-    padding: 160px 0 0 180px;
+    padding: 16rem 0 0 5rem;
 }
 
 .bottom-left-upper {
@@ -142,7 +142,7 @@
     gap: 32px;
 
     &__description {
-        padding: 32px;
+        padding: 3.2rem;
         width: 264px;
         height: auto;
         border: 1px solid var(--border-color);
@@ -188,7 +188,7 @@
     position: absolute;
     top: 24px;
     right: 20px;
-    padding: 10px;
+    padding: 1rem;
     background: none;
     border: 1px solid transparent;
     cursor: pointer;
@@ -341,7 +341,8 @@
 
     .bottom {
         // margin: 169px 0 0 205px;
-        padding: 160px 0 0 165px;
+        // padding: 160px 0 0 165px;
+        padding: 16rem 0 0 5rem;
     }
 
     .bottom-left-upper {
@@ -373,7 +374,7 @@
 @media (max-width: 1300px) {
     .bottom {
         // margin: 169px 0 0 116px;
-        padding: 160px 0 0 116px;
+        // padding: 160px 0 0 116px;
     }
     .bottom-right-pictures {
         &__bg-blob {
@@ -423,7 +424,7 @@
 
     .bottom {
         // margin: 163px 0 0 116px;
-        padding: 160px 0 0 100px;
+        // padding: 160px 0 0 100px;
     }
 
     .bottom-left-upper {
@@ -439,7 +440,7 @@
     .bottom-left-lower {
         &__description {
             width: 220px;
-            padding: 24px;
+            padding: 2.4rem;
         }
 
         &__icon {
@@ -486,7 +487,7 @@
 @media (max-width: 992px) {
     .bottom {
         // margin: 163px 0 0 85px;
-        padding: 160px 0 0 85px;
+        // padding: 160px 0 0 85px;
     } 
 
     .bottom-left-upper {
@@ -650,7 +651,7 @@
 
     .bottom {
         // margin: 140px 0;
-        padding: 140px 0;
+        // padding: 140px 0;
         
     }
 
@@ -772,7 +773,7 @@
     flex-direction: column;
     
     &__description {
-        padding: 18px;
+        padding: 1.8rem;
         width: 250px;
     }
 
