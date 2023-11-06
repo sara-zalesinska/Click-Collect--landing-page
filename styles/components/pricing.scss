@@ -108,10 +108,15 @@
 
 @media (max-width: 576px) {
     .pricing-text-content {
-        padding: 60px 0 0 0;
+        padding: 60px 0 80px 0;
         &__paragraph {
             font-size: 1.5rem;
         }
+    }
+
+    .pricing-visual-content {
+        padding: 144px 0 0 0;
+    
     }
     .pricing-section {
 
@@ -119,5 +124,16 @@
             width: 30%;
             top: -115px;
         }
+    }
+}
+
+@media (max-width: 440px) {
+    .pricing-visual-content {
+        padding: 144px 0 0 0;
+
+        &__smartphone-pic {
+            top: 50%;
+        }
+    
     }
 }
