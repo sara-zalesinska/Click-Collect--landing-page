@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    // padding: 144px 0;
+    // padding-bottom: 144px;
     gap: 71px;
     background-color: var(--bg-color-pricing);
 
@@ -14,12 +14,18 @@
 }
 
 .pricing-text-content {
-    padding: 144px 0;
+    padding: 130px 0 ;
     width: 35%;
 
     &__heading {
         text-align: left;
+        padding-top: 0;
+        font-family: var(--font-secondary);
+        font-size: 4.8rem;
+        font-weight: 500;
+        color: var(--btn-header-color);
     }
+
     &__paragraph {
         margin: 72px 0;
         font-family: var(--font-primary);
@@ -35,6 +41,7 @@
         width: 90%;
     }
 }
+
 @media (max-width: 1200px) {
     .pricing-visual-content {
         &__smartphone-pic {
@@ -47,16 +54,23 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .pricing-text-content {
+        padding: 100px 0 ;
+    }
+}
+
 @media (max-width: 992px) {
     .pricing-section {
         display: flex;
         flex-direction: column;
+        gap: unset;
     }
 
     .pricing-visual-content {
         &__smartphone-pic {
             position: absolute;
-            padding: 144px 0 0 0 ;
+            // padding: 144px 0 0 0 ;
             width: 100%;
             top: 39%;
             left: -2%;
@@ -70,6 +84,7 @@
         align-items: center;
         width: 100%; 
         z-index: 1;
+        padding: 90px 0 144px 0;
 
         &__paragraph {
             text-align: center;
@@ -93,7 +108,7 @@
 
 @media (max-width: 576px) {
     .pricing-text-content {
-        padding: 86px 0;
+        padding: 60px 0 0 0;
         &__paragraph {
             font-size: 1.5rem;
         }

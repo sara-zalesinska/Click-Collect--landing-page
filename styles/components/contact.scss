@@ -4,7 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 144px 0;
+    // padding: 144px 0;
+    padding-bottom: 144px;
     background-color: var(--border-color);
     overflow: hidden;
 
@@ -229,6 +230,10 @@ min-width: 100%;
 }
 
 @media (max-width: 576px) {
+ .contact-form {
+    width: 100%;
+ }   
+
 .app-input,
 .app-select,
 .app-textarea {

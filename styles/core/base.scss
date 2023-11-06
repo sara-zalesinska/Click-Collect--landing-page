@@ -106,17 +106,27 @@ html {
   font-size: 4.8rem;
   font-weight: 500;
   color: var(--btn-header-color);
+  padding-top: 130px;
   // margin-top: -60px;
+}
+
+@media (max-width: 1300px) {
+  .section-title {
+    padding-top: 100px;
+   
+  }
 }
 
 @media (max-width:992px) {
   .section-title {
+    padding-top: 80px;
     font-size: 4.6rem;
   }
 }
 
 @media (max-width: 576px) {
   .section-title {
+    padding-top: 60px;
     font-size: 4.3rem;
   }
   }
