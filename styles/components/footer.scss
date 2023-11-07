@@ -45,3 +45,13 @@
     }
   }
 }
+
+@media (max-width: 420px) {
+  .footer {
+    &__list-elements,
+    &__company-info,
+    &__link {
+      font-size: 1.1rem;
+    }
+  }
+}

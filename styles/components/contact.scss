@@ -215,11 +215,11 @@ select::-ms-expand {
 }
 
 @media (max-width: 768px) {
-  .app-input,
-  .app-select,
-  .app-textarea {
-    font-size: 1.6rem;
-  }
+  // .app-input,
+  // .app-select,
+  // .app-textarea {
+  //   font-size: 1.6rem;
+  // }
 
   .privacy-policy {
     &__message {
@@ -237,12 +237,14 @@ select::-ms-expand {
 @media (max-width: 576px) {
   .contact-form {
     width: 100%;
+    padding: 48px 20px;
   }
 
   .app-input,
   .app-select,
   .app-textarea {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    width: 100%;
   }
 
   .privacy-policy {
@@ -262,42 +264,41 @@ select::-ms-expand {
   .app-input,
   .app-select,
   .app-textarea {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .privacy-policy {
     &__message {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 
   .contact-section {
     &__legend {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 }
 
-@media (max-width: 400px) {
-  .app-input,
-  .app-select,
-  .app-textarea {
-    font-size: 0.9rem;
-  }
+// @media (max-width: 400px) {
+//   .app-input,
+//   .app-select,
+//   .app-textarea {
+//     font-size: 0.9rem;
+//   }
 
-  .privacy-policy {
-    &__message {
-      font-size: 0.8rem;
-    }
-  }
+//   .privacy-policy {
+//     &__message {
+//       font-size: 0.8rem;
+//     }
+//   }
 
-  .contact-section {
-    &__legend {
-      font-size: 0.8rem;
-    }
-  }
+//   .contact-section {
+//     &__legend {
+//       font-size: 0.8rem;
+//     }
+//   }
 
-  .empty-field-warning-message {
-    font-size: 1rem;
-  }
-}
+// .empty-field-warning-message {
+//   font-size: 1rem;
+// }
