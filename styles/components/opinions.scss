@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     margin-top: 72px;
-    // gap: 32px;
 }
 
 .opinion-box {
@@ -33,13 +32,6 @@
         margin-bottom: 40px;
     }
 }
-
-// .swiper-wrapper {
-//     width: 100%;
-//     max-width: 1400px;
-//     margin: 0 auto;
-//     padding: 0 1rem;
-// }
 
 .opinion-box-user-info {
     display: flex;
@@ -69,6 +61,11 @@
         line-height: 160%;
     }
 }
+
+
+
+
+//RWD
 
 @media (max-width: 1148px) {
     .opinion-box {
@@ -106,11 +103,5 @@
 @media (max-width: 768px) {
     .opinion-box {
         min-height: unset;
-    }
-}
-
-@media (max-width: 576px) {
-    .opinions-section {
-        // padding: 86px 2rem;
     }
 }

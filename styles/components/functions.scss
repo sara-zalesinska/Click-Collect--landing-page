@@ -1,9 +1,7 @@
 .functions-section {
     margin-top: 112px;
     background-color: var(--bg-color-secondary);
-    // &__heading {
-    //     padding-top: 144px;
-    // }
+
     &__list {
         display: flex;
         justify-content: space-around;
@@ -35,6 +33,10 @@
     }
 }
 
+
+
+//RWD
+
 @media (max-width: 992px) {
     .functions-section {
         &__function-description {
@@ -52,11 +54,6 @@
 
 @media (max-width: 576px) {
     .functions-section {
-        // padding-top: 114px;
-
-        &__heading {
-            // padding-top: 84px;
-        }
         &__function-description {
             font-size: 1.5rem;
         }

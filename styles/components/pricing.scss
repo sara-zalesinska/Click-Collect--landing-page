@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    // padding-bottom: 144px;
     gap: 71px;
     background-color: var(--bg-color-pricing);
 
@@ -42,6 +41,11 @@
     }
 }
 
+
+
+
+//RWD
+
 @media (max-width: 1200px) {
     .pricing-visual-content {
         &__smartphone-pic {
@@ -70,7 +74,6 @@
     .pricing-visual-content {
         &__smartphone-pic {
             position: absolute;
-            // padding: 144px 0 0 0 ;
             width: 100%;
             top: 39%;
             left: -2%;
