@@ -1,335 +1,303 @@
 .contact-section {
-    position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 144px;
+  background-color: var(--border-color);
+  overflow: hidden;
+
+  &__bottom {
+    margin-top: 24px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 144px;
-    background-color: var(--border-color);
-    overflow: hidden;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 
-    &__bottom {
-        margin-top: 24px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-    }
+  &__legend {
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    line-height: 150%;
+    opacity: 0.4;
+  }
 
-    &__legend {
-        font-family: var(--font-primary);
-        font-size: 1.4rem;
-        line-height: 150%;
-        opacity: .4;
-    }
+  &__robot-pic {
+    position: absolute;
+    left: 55px;
+    bottom: -77px;
+  }
 
-    &__robot-pic {
-        position: absolute;
-        left: 55px;
-        bottom: -77px;
-    }
-
-    &__robot-shadow {
-        position: absolute;
-        bottom: 0;
-        right: 119px;
-        width: 63%;
-    }
+  &__robot-shadow {
+    position: absolute;
+    bottom: 0;
+    right: 119px;
+    width: 63%;
+  }
 }
 
 .contact-form {
-    padding: 48px;
-    margin-top: 72px;
-    width: 784px;
-    border-radius: 8px;
-    background-color: var(--bg-color-main);
-    z-index: 1;
+  padding: 48px;
+  margin-top: 72px;
+  width: 784px;
+  border-radius: 8px;
+  background-color: var(--bg-color-main);
+  z-index: 1;
 }
 
 .contact-message {
-    min-height: 120px;
-    max-height: 142px;
-    width: 100%;
-    resize: vertical;
+  min-height: 120px;
+  max-height: 142px;
+  width: 100%;
+  resize: vertical;
 }
 
 .app-fieldset {
-display: flex;
-flex-direction: column;
-min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
 
-&__box {
+  &__box {
     margin-bottom: 24px;
-}
+  }
 
-&__box-select {
+  &__box-select {
     position: relative;
 
     &--arrow {
-        position: absolute;
-        top: 16px;
-        right: 17px;
+      position: absolute;
+      top: 16px;
+      right: 17px;
     }
-}
+  }
 }
 
 .app-input,
 .app-select,
 .app-textarea {
-    width: 100%;
-    padding: 13px 17px;
-    font-family: var(--font-primary);
-    font-size: 1.8rem;
-    line-height: 150%;
-    opacity: 0.5;
-    border-radius: 6px;
-    border: 1px solid var(--input-border-color);
+  width: 100%;
+  padding: 13px 17px;
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  line-height: 150%;
+  opacity: 0.5;
+  border-radius: 6px;
+  border: 1px solid var(--input-border-color);
 
-    &:focus {
-        outline: none;
-        border-color: var(--btn-header-color);
-        box-shadow: 0 0 0 0.125em rgba(62,142,208,.25);
-       
-    } 
+  &:focus {
+    outline: none;
+    border-color: var(--btn-header-color);
+    box-shadow: 0 0 0 0.125em rgba(62, 142, 208, 0.25);
+  }
 }
 
 .app-textarea {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .app-select {
-    position: relative;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+  position: relative;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 select::-ms-expand {
-    display: none;
-    }
-
-
-
-
-
-
+  display: none;
+}
 
 #data-processing-checkbox {
-    margin: 0;
-    padding: 9px 2px;
-    width: 5%;
-    align-self: flex-start;
+  margin: 0;
+  padding: 9px 2px;
+  width: 5%;
+  align-self: flex-start;
 }
 
 .privacy-policy {
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
 
-    &__message {
-        margin-left: 16px;
-        font-family: var(--font-primary);
-        font-size: 1.4rem;
-        line-height: 150%; 
-    }
+  &__message {
+    margin-left: 16px;
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
 }
 
 .warning-message {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 .empty-field-warning-message,
 .warning-message {
-    font-family: var(--font-primary);
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--warning-message-color);
-    margin: 11px 0 0 11px;
-    display: none;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--warning-message-color);
+  margin: 11px 0 0 11px;
+  display: none;
 }
 
 .error {
-    border: 1px solid var(--warning-message-color);
+  border: 1px solid var(--warning-message-color);
 }
 
 .success {
-    border: 1px solid var(--success);
+  border: 1px solid var(--success);
 }
-
-
-
-
-
 
 //RWD
 
-
-@media (max-width:1200px) {
-    .contact-section {
-        &__robot-pic {
-            left: -42px;
-            bottom: -200px;
-            opacity: .5;
-            width: 100%;
-        }
-
-        &__heading {
-            z-index: 1;
-        }
+@media (max-width: 1200px) {
+  .contact-section {
+    &__robot-pic {
+      left: -42px;
+      bottom: -200px;
+      opacity: 0.5;
+      width: 100%;
     }
-}
 
+    &__heading {
+      z-index: 1;
+    }
+  }
+}
 
 @media (max-width: 992px) {
-    .contact-form {
-        width: 80%;
-    }
+  .contact-form {
+    width: 80%;
+  }
 
-
-.app-input,
-.app-select,
-.app-textarea {
+  .app-input,
+  .app-select,
+  .app-textarea {
     font-size: 1.7rem;
-}
+  }
 
-
-.privacy-policy {
+  .privacy-policy {
     &__message {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
-}
+  }
 
-.contact-section {
+  .contact-section {
     &__legend {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
 
     &__robot-pic {
-        bottom: 50px;
+      bottom: 50px;
     }
-}
-
+  }
 }
 
 @media (max-width: 768px) {
-    .contact-section {
-      
-        &__robot-pic {
-            bottom: 150px;
-        }
+  .contact-section {
+    &__robot-pic {
+      bottom: 150px;
     }
+  }
 }
 
 @media (max-width: 600px) {
-    .contact-section {
-        &__bottom {
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        &__legend {
-            align-self: flex-end;
-        }
+  .contact-section {
+    &__bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
+
+    &__legend {
+      align-self: flex-end;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-
-.app-input,
-.app-select,
-.app-textarea {
+  .app-input,
+  .app-select,
+  .app-textarea {
     font-size: 1.6rem;
-}
+  }
 
-
-.privacy-policy {
+  .privacy-policy {
     &__message {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
-}
+  }
 
-.contact-section {
+  .contact-section {
     &__legend {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
-}
-
+  }
 }
 
 @media (max-width: 576px) {
- .contact-form {
+  .contact-form {
     width: 100%;
- }   
+  }
 
-.app-input,
-.app-select,
-.app-textarea {
+  .app-input,
+  .app-select,
+  .app-textarea {
     font-size: 1.5rem;
-}
+  }
 
-
-.privacy-policy {
+  .privacy-policy {
     &__message {
-        font-size: 1.1rem;
+      font-size: 1.1rem;
     }
-}
+  }
 
-.contact-section {
+  .contact-section {
     &__legend {
-        font-size: 1.1rem;
+      font-size: 1.1rem;
     }
-}
-
+  }
 }
 
 @media (max-width: 470px) {
-
-.app-input,
-.app-select,
-.app-textarea {
+  .app-input,
+  .app-select,
+  .app-textarea {
     font-size: 1.1rem;
-}
+  }
 
-
-.privacy-policy {
+  .privacy-policy {
     &__message {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-}
+  }
 
-.contact-section {
+  .contact-section {
     &__legend {
-        font-size: 1rem;
+      font-size: 1rem;
     }
+  }
 }
-
-}
-
 
 @media (max-width: 400px) {
+  .app-input,
+  .app-select,
+  .app-textarea {
+    font-size: 0.9rem;
+  }
 
-    .app-input,
-    .app-select,
-    .app-textarea {
-        font-size: .9rem;
+  .privacy-policy {
+    &__message {
+      font-size: 0.8rem;
     }
-    
-    
-    .privacy-policy {
-        &__message {
-            font-size: .8rem;
-        }
-    }
-    
-    .contact-section {
-        &__legend {
-            font-size: .8rem;
-        }
-    }
+  }
 
-    .empty-field-warning-message {
-        font-size: 1rem;
+  .contact-section {
+    &__legend {
+      font-size: 0.8rem;
     }
-    
-    }
+  }
 
-
+  .empty-field-warning-message {
+    font-size: 1rem;
+  }
+}

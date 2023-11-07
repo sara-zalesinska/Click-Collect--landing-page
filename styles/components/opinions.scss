@@ -1,107 +1,103 @@
 .opinions-section {
-    padding: 0 2rem;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-bottom: 144px;
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 144px;
 }
 
 .opinion-boxes {
-    display: flex;
-    justify-content: center;
-    margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
 }
 
 .opinion-box {
-    position: relative;
-    width: 100%;
-    padding: 64px;
-    background-color: var(--border-color);
+  position: relative;
+  width: 100%;
+  padding: 64px;
+  background-color: var(--border-color);
 
-    &__citation-icon{
-        position: absolute;
-        right: 56px;
-        top: 48px;
-    }
+  &__citation-icon {
+    position: absolute;
+    right: 56px;
+    top: 48px;
+  }
 
-    &__opinion {
-        font-family: var(--font-primary);
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 180%;
-        margin-bottom: 40px;
-    }
+  &__opinion {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 180%;
+    margin-bottom: 40px;
+  }
 }
 
 .opinion-box-user-info {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 
-    &__user-profile-picture {
-        width: 80px;
-        height: 80px;
-        border-radius: 80px;
-    }
+  &__user-profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+  }
 
-    &__user-data {
-          font-family: var(--font-primary);
-    }
-   
-    &__user-name {
-        color: var(--user-name-font-color);
-        font-size: 1.8rem;
-        font-weight: 700;
-        line-height: 160%;
-    }
+  &__user-data {
+    font-family: var(--font-primary);
+  }
 
-    &__user-proffession {
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 160%;
-    }
+  &__user-name {
+    color: var(--user-name-font-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 160%;
+  }
+
+  &__user-proffession {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 160%;
+  }
 }
-
-
-
 
 //RWD
 
 @media (max-width: 1148px) {
-    .opinion-box {
-        padding: 50px;
-        min-height: 410px;
-    }
-
+  .opinion-box {
+    padding: 50px;
+    min-height: 410px;
+  }
 }
 
 @media (max-width: 992px) {
-    .opinion-box {
-        min-height: 450px;
-        &__opinion {
-            font-size: 1.7rem;
-        }
+  .opinion-box {
+    min-height: 450px;
+    &__opinion {
+      font-size: 1.7rem;
+    }
+  }
+
+  .opinion-box-user-info {
+    &__user-name {
+      font-size: 1.7rem;
     }
 
-    .opinion-box-user-info {
-        &__user-name{
-            font-size: 1.7rem;
-        }
-
-        &__user-profession {
-            font-size: 1.7rem;
-        }
+    &__user-profession {
+      font-size: 1.7rem;
     }
+  }
 }
 
 @media (max-width: 830px) {
-    .opinion-box {
-        min-height: 490px;
-    }
+  .opinion-box {
+    min-height: 490px;
+  }
 }
 
 @media (max-width: 768px) {
-    .opinion-box {
-        min-height: unset;
-    }
+  .opinion-box {
+    min-height: unset;
+  }
 }

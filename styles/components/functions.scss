@@ -1,77 +1,71 @@
 .functions-section {
-    margin-top: 112px;
-    background-color: var(--bg-color-secondary);
+  margin-top: 112px;
+  background-color: var(--bg-color-secondary);
 
-    &__list {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 32px;
-        padding: 72px 0 ;
-    }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 72px 0;
+  }
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 0 ;
-        width: 328px;
-        z-index: 1;
-    }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    width: 328px;
+    z-index: 1;
+  }
 
-    &__function-description {
-        margin-top: 40px;
-        font-family: var(--font-primary);
-        text-align: center;
-        font-size: 1.8rem;
-        font-weight: 400;
-        line-height: 180%;
-    }
+  &__function-description {
+    margin-top: 40px;
+    font-family: var(--font-primary);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 180%;
+  }
 
-    &__function-icon {
-        width: 80%;
-    }
+  &__function-icon {
+    width: 80%;
+  }
 }
-
-
 
 //RWD
 
 @media (max-width: 992px) {
-    .functions-section {
-        &__function-description {
-            font-size: 1.7rem;
-        }
+  .functions-section {
+    &__function-description {
+      font-size: 1.7rem;
     }
+  }
 }
 
-
 @media (max-width: 690px) {
-    .functions-section {
-        margin-top: 0;
-    }
+  .functions-section {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 576px) {
-    .functions-section {
-        &__function-description {
-            font-size: 1.5rem;
-        }
-       
+  .functions-section {
+    &__function-description {
+      font-size: 1.5rem;
     }
+  }
 }
 
 @media (max-width: 350px) {
-    .functions-section {
-        &__function-description {
-            margin-top: 20px;
-            font-size: 1.3rem;
-        }
-
-        &__item {
-            padding: 20px 0 ;
-        }
-       
+  .functions-section {
+    &__function-description {
+      margin-top: 20px;
+      font-size: 1.3rem;
     }
 
+    &__item {
+      padding: 20px 0;
+    }
+  }
 }

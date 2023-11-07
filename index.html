@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Piq.One</title>
   </head>
   <body>
     <div class="page">
       <nav class="top">
-        <a href="#start"><img src="./images/pics/Logo.png" alt="piq one logo icon" class="top__logo"></a>
-        
+        <a href="#start"
+          ><img src="./images/pics/Logo.png" alt="piq one logo icon" class="top__logo"
+        /></a>
+
         <button class="burger-btn">
           <div class="burger-btn__box">
             <div class="burger-btn__bars"></div>
@@ -21,277 +26,521 @@
         </button>
 
         <button class="close-menu-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" class="close-menu-btn__icon"  viewBox="0 0 384 512"><style>svg{fill:#000000}</style><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="close-menu-btn__icon"
+            viewBox="0 0 384 512"
+          >
+            <style>
+              svg {
+                fill: #000000;
+              }
+            </style>
+            <path
+              d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+            />
+          </svg>
         </button>
 
         <div class="nav">
           <ul class="nav__list">
             <li class="nav__list-elemnt"><a href="#start" class="nav__list-link">Start</a></li>
-            <li class="nav__list-elemnt"><a href="#functions" class="nav__list-link">Funkcje</a></li>
-            <li class="nav__list-elemnt"><a href="#benefits" class="nav__list-link">Korzyści</a></li>
+            <li class="nav__list-elemnt">
+              <a href="#functions" class="nav__list-link">Funkcje</a>
+            </li>
+            <li class="nav__list-elemnt">
+              <a href="#benefits" class="nav__list-link">Korzyści</a>
+            </li>
             <li class="nav__list-elemnt"><a href="#opinions" class="nav__list-link">Opinie</a></li>
             <li class="nav__list-elemnt"><a href="#pricing" class="nav__list-link">Cennik</a></li>
             <li class="nav__list-elemnt"><a href="#contact" class="nav__list-link">Kontakt</a></li>
-            <li class="nav__list-elemnt"><select name="lang" id="language-select" class="nav__lang-select">
-              <option value="1">PL</option>
-              <option value="2">EN</option>
-            </select></li>
+            <li class="nav__list-elemnt">
+              <select name="lang" id="language-select" class="nav__lang-select">
+                <option value="1">PL</option>
+                <option value="2">EN</option>
+              </select>
+            </li>
           </ul>
-          
         </div>
       </nav>
-   <header class="header">
-    <section id="start" class="header-section">
-      <img src="./images/blobs/Blob header light.png" alt="" class="header-section__bg-blob-light">
-      
-      <div class="bottom ">
-        <div class="bottom-left ">
-          <div class="bottom-left-upper">
-             <h1 class="bottom-left-upper__heading">Click&Collect 2.0</h1>
-          <p class="bottom-left-upper__paragraph">Nowoczesne, <span class="bold">wspierane przez AI</span>, rozwiązania umożliwiające ekspresowe odbiory zamówień </p>
-          </div>
-         <div class="bottom-left-lower" >
-          <div class="bottom-left-lower__description" >
-            <img src="./images/icons/clipboard-icon.png" alt="cliboard icon" class="bottom-left-lower__icon">
-            <p class="bottom-left-lower__paragraph">Lepiej <span class="bold">organizuj i poprawiaj wydajność pracowników </span>zaangażowanych w proces Click&Collect</p>
-          </div>
-          <div class="bottom-left-lower__description" >
-            <img src="./images/icons/hand-parcel-icon.png" alt="hand holding a parcel" class="bottom-left-lower__icon">
-            <p class="bottom-left-lower__paragraph"><span class="bold">Zaoferuj swoim klientom nową jakość </span>podczas dokonywania zakupów online</p>
-          </div>
-         </div>
-         <button class="bottom-left__find-more-btn app-button">Dowiedz się więcej</button>
-        </div>
-        <div class="bottom-right">
-          <div class="bottom-right__pictures">
-            <img src="./images/blobs/blob-header-dark.png" alt="" class="bottom-right__picture bottom-right-pictures__bg-blob">
-            <img src="./images/pics/car-pic.png" alt="a green car" class="bottom-right__picture bottom-right-pictures__car">
-            <img src="./images/pics/robot-header-pic.png" alt="a robot with parcels" class="bottom-right__picture bottom-right-pictures__robot">
-          </div>
-        </div>
-      </div>
-    </section>
-    
-   </header>
-   <main class="main">
-    <section id="functions" class="functions-section container ">
-      <h2 class="functions-section__heading section-title">Funkcje</h2>
-      <ul class="functions-section__list">
-        <li class="functions-section__item" data-aos="fade-up" data-aos-delay="100">
-          <img src="./images/icons/dart-board-icon.png" loading="lazy" alt="dart board icon" class="functions-section__function-icon">
-          <p class="functions-section__function-description">
-            Zaawansowany, <span class="bold">oparty na AI</span>, system zarządzania i obsługi procesu sprzedaży w modelu <span class="bold">Click&Collect</span>
-          </p>
-        </li>
-        <li class="functions-section__item" data-aos="fade-up" data-aos-delay="100">
-          <img src="./images/icons/laptop-icon.png" loading="lazy" alt="laptop icon" class="functions-section__function-icon">
-          <p class="functions-section__function-description">
-            Intuicyjna aplikacja dla pracowników <span class="bold">optymalnie organizująca pracę</span> oraz umożliwiająca <span class="bold">automatyzację procesów</span> 
-          </p>
-        </li>
-        <li class="functions-section__item" data-aos="fade-up" data-aos-delay="200">
-          <img src="./images/icons/notepad-icon.png" loading="lazy" alt="notepad icon" class="functions-section__function-icon">
-          <p class="functions-section__function-description">
-            <span class="bold">Dynamiczne i skalowalne harmonogramy pracy</span> osób zaangażowanych w proces przygotowywania zamówień
-          </p>
-        </li>
-        <li class="functions-section__item" data-aos="fade-up" data-aos-delay="200">
-          <img src="./images/icons/smartphone-icon.png" loading="lazy" alt="smarthone with shopping bags icon" class="functions-section__function-icon">
-          <p class="functions-section__function-description">
-            Przyjazna <span class="bold">aplikacja dla klientów</span> zwiększająca wygodę dokonywania zakupów
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section id="benefits" class="benefits-section container">
-      <img src="./images/blobs/blob-benefits-blue.png" loading="lazy" alt="" class="benefits-section__blob--blue">
-      <img src="./images/blobs/blob-benefits-green.png" loading="lazy" alt="" class="benefits-section__blob--green">
-      <h2 class="benefits-section__heading section-title">Korzyści</h2>
-      <ul class="benefits-section__list">
-        <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="100">
-          <img src="./images/icons/clock-icon.png" loading="lazy" alt="clock icon" class="benefits-section__icon">
-          <p class="benefits-section__description">
-            W momencie składania zamówienia klient zna rzeczywistą godzinę odbioru
-          </p>
-        </li>
-        <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="200">
-          <img src="./images/icons/shop-icon.png" loading="lazy" alt="shop icon" class="benefits-section__icon">
-          <p class="benefits-section__description">
-            Zwiększenie wydajności przygotowywania zamówień
-          </p>
-        </li>
-        <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="300">
-          <img src="./images/icons/cart-icon.png" loading="lazy" alt="shopping cart icon" class="benefits-section__icon">
-          <p class="benefits-section__description">
-            Zastosowanie w dotychczasowych lub nowych sklepach internetowych
-          </p>
-        </li>
-        <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="400">
-          <img src="./images/icons/smartphone-icon-small.png" loading="lazy" alt="" class="benefits-section__icon">
-          <p class="benefits-section__description">
-            Duże możliwości zwiększania skali, zaczynając nawet od incydentalnych zamówień
-          </p>
-        </li>
-        <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="500">
-          <img src="./images/icons/tick-icon.png" loading="lazy" alt="a green tick icon" class="benefits-section__icon">
-          <p class="benefits-section__description">
-            Okazja na odróżnienie się od konkurencji
-          </p>
-        </li>
-        <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="600">
-          <img src="./images/icons/clock-fast-icon.png" loading="lazy" alt="clock icon" class="benefits-section__icon">
-          <p class="benefits-section__description">
-            Skrócenie czasu oczekiwania do minimum
-          </p>
-        </li>
-        <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="700">
-          <img src="./images/icons/person-icon.png" loading="lazy" alt="person with parcels icon" class="benefits-section__icon">
-          <p class="benefits-section__description">
-            Elastyczne okna odbioru
-          </p>
-        </li>
-        <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="800">
-          <img src="./images/icons/stopwatch-icon.png" loading="lazy" alt="stopwatch icon" class="benefits-section__icon">
-          <p class="benefits-section__description">
-            Aktualizacje w czasie rzeczywistym
-          </p>
-        </li>
-      </ul>
-      <img src="./images/blobs/blob-benefits-light.png" loading="lazy" alt="" class="benefits-section__blob--light-green">
-    </section>
-    <section class="divider-section">
-     <div class="divider-section-container" data-aos="fade-up">
-        <img src="./images/pics/laptop-pic-divider.png"  alt="laptop" class="divider-section__image divider-section__image--right">
-        <img src="./images/pics/smartphone-in-hand-divider-pic.png" loading="lazy" alt="smartphone in a hand" class="divider-section__image divider-section__image--left">
-      </div>
-    </section>
-      <section id="opinions" class="opinions-section">
-        <h2 class="opinion-section__heading section-title">Opinie</h2>
-        <div class="opinion-boxes swiper"  data-aos="fade-up">
-           <div class=" swiper-wrapper">
-            <div class="swiper-slide">
-           <div class="opinion-box">
-          <img src="./images/icons/citation-icon.png" loading="lazy" alt="citation mark icon" class="opinion-box__citation-icon">
-          <p class="opinion-box__opinion">Efektywne i nowoczesne rozwiązanie, które przekształciło nasz model biznesowy. Dzięki wykorzystaniu AI, jesteśmy w stanie lepiej zorganizować pracę i zwiększyć wydajność naszego zespołu. Bardzo polecam!</p>
-          <div class="opinion-box-user-info">
-           <img src="./images/icons/opinion-user-icon-one.png" loading="lazy" alt="user's profile picture" class="opinion-box-user-info__user-profile-picture">
-            <div class="opinion-box-user-info__user-data">
-              <p class="opinion-box-user-info__user-name">Tomasz Zieliński</p>
-              <p class="opinion-box-user-info__user-proffession">Dyrektor IT, Corgix Sp. z o.o.</p>
+      <header class="header">
+        <section id="start" class="header-section">
+          <img
+            src="./images/blobs/Blob header light.png"
+            alt=""
+            class="header-section__bg-blob-light"
+          />
+
+          <div class="bottom">
+            <div class="bottom-left">
+              <div class="bottom-left-upper">
+                <h1 class="bottom-left-upper__heading">Click&Collect 2.0</h1>
+                <p class="bottom-left-upper__paragraph">
+                  Nowoczesne, <span class="bold">wspierane przez AI</span>, rozwiązania
+                  umożliwiające ekspresowe odbiory zamówień
+                </p>
+              </div>
+              <div class="bottom-left-lower">
+                <div class="bottom-left-lower__description">
+                  <img
+                    src="./images/icons/clipboard-icon.png"
+                    alt="cliboard icon"
+                    class="bottom-left-lower__icon"
+                  />
+                  <p class="bottom-left-lower__paragraph">
+                    Lepiej
+                    <span class="bold">organizuj i poprawiaj wydajność pracowników </span
+                    >zaangażowanych w proces Click&Collect
+                  </p>
+                </div>
+                <div class="bottom-left-lower__description">
+                  <img
+                    src="./images/icons/hand-parcel-icon.png"
+                    alt="hand holding a parcel"
+                    class="bottom-left-lower__icon"
+                  />
+                  <p class="bottom-left-lower__paragraph">
+                    <span class="bold">Zaoferuj swoim klientom nową jakość </span>podczas
+                    dokonywania zakupów online
+                  </p>
+                </div>
+              </div>
+              <button class="bottom-left__find-more-btn app-button">Dowiedz się więcej</button>
+            </div>
+            <div class="bottom-right">
+              <div class="bottom-right__pictures">
+                <img
+                  src="./images/blobs/blob-header-dark.png"
+                  alt=""
+                  class="bottom-right__picture bottom-right-pictures__bg-blob"
+                />
+                <img
+                  src="./images/pics/car-pic.png"
+                  alt="a green car"
+                  class="bottom-right__picture bottom-right-pictures__car"
+                />
+                <img
+                  src="./images/pics/robot-header-pic.png"
+                  alt="a robot with parcels"
+                  class="bottom-right__picture bottom-right-pictures__robot"
+                />
+              </div>
             </div>
           </div>
-        </div>
-         </div>
-         <div class="swiper-slide">
-          
- <div class="opinion-box ">
-          <img src="./images/icons/citation-icon.png" loading="lazy" alt="citation mark icon" class="opinion-box__citation-icon">
-          <p class="opinion-box__opinion">Innowacyjne podejście do procesu zakupowego wprowadzone przez PIQ.one znacznie ułatwiło nam zarządzanie zamówieniami. Dzięki zastosowaniu sztucznej inteligencji, procesy stały się bardziej płynne i efektywne.</p>
-          <div class="opinion-box-user-info">
-           <img src="./images/icons/opinion-user-icon-two.png" loading="lazy" alt="user's profile picture" class="opinion-box-user-info__user-profile-picture">
-           <div class="opinion-box-user-info__user-data">
-            <p class="opinion-box-user-info__user-name">Monika Grześkowiak</p>
-            <p class="opinion-box-user-info__user-proffession">Członek Zarządu, Net Systemts</p>
+        </section>
+      </header>
+      <main class="main">
+        <section id="functions" class="functions-section container">
+          <h2 class="functions-section__heading section-title">Funkcje</h2>
+          <ul class="functions-section__list">
+            <li class="functions-section__item" data-aos="fade-up" data-aos-delay="100">
+              <img
+                src="./images/icons/dart-board-icon.png"
+                loading="lazy"
+                alt="dart board icon"
+                class="functions-section__function-icon"
+              />
+              <p class="functions-section__function-description">
+                Zaawansowany, <span class="bold">oparty na AI</span>, system zarządzania i obsługi
+                procesu sprzedaży w modelu <span class="bold">Click&Collect</span>
+              </p>
+            </li>
+            <li class="functions-section__item" data-aos="fade-up" data-aos-delay="100">
+              <img
+                src="./images/icons/laptop-icon.png"
+                loading="lazy"
+                alt="laptop icon"
+                class="functions-section__function-icon"
+              />
+              <p class="functions-section__function-description">
+                Intuicyjna aplikacja dla pracowników
+                <span class="bold">optymalnie organizująca pracę</span> oraz umożliwiająca
+                <span class="bold">automatyzację procesów</span>
+              </p>
+            </li>
+            <li class="functions-section__item" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="./images/icons/notepad-icon.png"
+                loading="lazy"
+                alt="notepad icon"
+                class="functions-section__function-icon"
+              />
+              <p class="functions-section__function-description">
+                <span class="bold">Dynamiczne i skalowalne harmonogramy pracy</span> osób
+                zaangażowanych w proces przygotowywania zamówień
+              </p>
+            </li>
+            <li class="functions-section__item" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="./images/icons/smartphone-icon.png"
+                loading="lazy"
+                alt="smarthone with shopping bags icon"
+                class="functions-section__function-icon"
+              />
+              <p class="functions-section__function-description">
+                Przyjazna <span class="bold">aplikacja dla klientów</span> zwiększająca wygodę
+                dokonywania zakupów
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section id="benefits" class="benefits-section container">
+          <img
+            src="./images/blobs/blob-benefits-blue.png"
+            loading="lazy"
+            alt=""
+            class="benefits-section__blob--blue"
+          />
+          <img
+            src="./images/blobs/blob-benefits-green.png"
+            loading="lazy"
+            alt=""
+            class="benefits-section__blob--green"
+          />
+          <h2 class="benefits-section__heading section-title">Korzyści</h2>
+          <ul class="benefits-section__list">
+            <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="100">
+              <img
+                src="./images/icons/clock-icon.png"
+                loading="lazy"
+                alt="clock icon"
+                class="benefits-section__icon"
+              />
+              <p class="benefits-section__description">
+                W momencie składania zamówienia klient zna rzeczywistą godzinę odbioru
+              </p>
+            </li>
+            <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="./images/icons/shop-icon.png"
+                loading="lazy"
+                alt="shop icon"
+                class="benefits-section__icon"
+              />
+              <p class="benefits-section__description">
+                Zwiększenie wydajności przygotowywania zamówień
+              </p>
+            </li>
+            <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="300">
+              <img
+                src="./images/icons/cart-icon.png"
+                loading="lazy"
+                alt="shopping cart icon"
+                class="benefits-section__icon"
+              />
+              <p class="benefits-section__description">
+                Zastosowanie w dotychczasowych lub nowych sklepach internetowych
+              </p>
+            </li>
+            <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="400">
+              <img
+                src="./images/icons/smartphone-icon-small.png"
+                loading="lazy"
+                alt=""
+                class="benefits-section__icon"
+              />
+              <p class="benefits-section__description">
+                Duże możliwości zwiększania skali, zaczynając nawet od incydentalnych zamówień
+              </p>
+            </li>
+            <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="500">
+              <img
+                src="./images/icons/tick-icon.png"
+                loading="lazy"
+                alt="a green tick icon"
+                class="benefits-section__icon"
+              />
+              <p class="benefits-section__description">Okazja na odróżnienie się od konkurencji</p>
+            </li>
+            <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="600">
+              <img
+                src="./images/icons/clock-fast-icon.png"
+                loading="lazy"
+                alt="clock icon"
+                class="benefits-section__icon"
+              />
+              <p class="benefits-section__description">Skrócenie czasu oczekiwania do minimum</p>
+            </li>
+            <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="700">
+              <img
+                src="./images/icons/person-icon.png"
+                loading="lazy"
+                alt="person with parcels icon"
+                class="benefits-section__icon"
+              />
+              <p class="benefits-section__description">Elastyczne okna odbioru</p>
+            </li>
+            <li class="benefits-section__list-item" data-aos="fade-up" data-aos-delay="800">
+              <img
+                src="./images/icons/stopwatch-icon.png"
+                loading="lazy"
+                alt="stopwatch icon"
+                class="benefits-section__icon"
+              />
+              <p class="benefits-section__description">Aktualizacje w czasie rzeczywistym</p>
+            </li>
+          </ul>
+          <img
+            src="./images/blobs/blob-benefits-light.png"
+            loading="lazy"
+            alt=""
+            class="benefits-section__blob--light-green"
+          />
+        </section>
+        <section class="divider-section">
+          <div class="divider-section-container" data-aos="fade-up">
+            <img
+              src="./images/pics/laptop-pic-divider.png"
+              alt="laptop"
+              class="divider-section__image divider-section__image--right"
+            />
+            <img
+              src="./images/pics/smartphone-in-hand-divider-pic.png"
+              loading="lazy"
+              alt="smartphone in a hand"
+              class="divider-section__image divider-section__image--left"
+            />
           </div>
-          </div>
-        </div>
-         </div>
-         <div class="swiper-slide">
-          
-          <div class="opinion-box ">
-          <img src="./images/icons/citation-icon.png" loading="lazy" alt="citation mark icon" class="opinion-box__citation-icon">
-          <p class="opinion-box__opinion">Efektywne i nowoczesne rozwiązanie, które przekształciło nasz model biznesowy. Dzięki wykorzystaniu AI, jesteśmy w stanie lepiej zorganizować pracę i zwiększyć wydajność naszego zespołu. Bardzo polecam!</p>
-          <div class="opinion-box-user-info">
-           <img src="./images/icons/opinion-user-icon-one.png" loading="lazy" alt="user's profile picture" class="opinion-box-user-info__user-profile-picture">
-            <div class="opinion-box-user-info__user-data">
-              <p class="opinion-box-user-info__user-name">Tomasz Zieliński</p>
-              <p class="opinion-box-user-info__user-proffession">Dyrektor IT, Corgix Sp. z o.o.</p>
+        </section>
+        <section id="opinions" class="opinions-section">
+          <h2 class="opinion-section__heading section-title">Opinie</h2>
+          <div class="opinion-boxes swiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="opinion-box">
+                  <img
+                    src="./images/icons/citation-icon.png"
+                    loading="lazy"
+                    alt="citation mark icon"
+                    class="opinion-box__citation-icon"
+                  />
+                  <p class="opinion-box__opinion">
+                    Efektywne i nowoczesne rozwiązanie, które przekształciło nasz model biznesowy.
+                    Dzięki wykorzystaniu AI, jesteśmy w stanie lepiej zorganizować pracę i zwiększyć
+                    wydajność naszego zespołu. Bardzo polecam!
+                  </p>
+                  <div class="opinion-box-user-info">
+                    <img
+                      src="./images/icons/opinion-user-icon-one.png"
+                      loading="lazy"
+                      alt="user's profile picture"
+                      class="opinion-box-user-info__user-profile-picture"
+                    />
+                    <div class="opinion-box-user-info__user-data">
+                      <p class="opinion-box-user-info__user-name">Tomasz Zieliński</p>
+                      <p class="opinion-box-user-info__user-proffession">
+                        Dyrektor IT, Corgix Sp. z o.o.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="opinion-box">
+                  <img
+                    src="./images/icons/citation-icon.png"
+                    loading="lazy"
+                    alt="citation mark icon"
+                    class="opinion-box__citation-icon"
+                  />
+                  <p class="opinion-box__opinion">
+                    Innowacyjne podejście do procesu zakupowego wprowadzone przez PIQ.one znacznie
+                    ułatwiło nam zarządzanie zamówieniami. Dzięki zastosowaniu sztucznej
+                    inteligencji, procesy stały się bardziej płynne i efektywne.
+                  </p>
+                  <div class="opinion-box-user-info">
+                    <img
+                      src="./images/icons/opinion-user-icon-two.png"
+                      loading="lazy"
+                      alt="user's profile picture"
+                      class="opinion-box-user-info__user-profile-picture"
+                    />
+                    <div class="opinion-box-user-info__user-data">
+                      <p class="opinion-box-user-info__user-name">Monika Grześkowiak</p>
+                      <p class="opinion-box-user-info__user-proffession">
+                        Członek Zarządu, Net Systemts
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="opinion-box">
+                  <img
+                    src="./images/icons/citation-icon.png"
+                    loading="lazy"
+                    alt="citation mark icon"
+                    class="opinion-box__citation-icon"
+                  />
+                  <p class="opinion-box__opinion">
+                    Efektywne i nowoczesne rozwiązanie, które przekształciło nasz model biznesowy.
+                    Dzięki wykorzystaniu AI, jesteśmy w stanie lepiej zorganizować pracę i zwiększyć
+                    wydajność naszego zespołu. Bardzo polecam!
+                  </p>
+                  <div class="opinion-box-user-info">
+                    <img
+                      src="./images/icons/opinion-user-icon-one.png"
+                      loading="lazy"
+                      alt="user's profile picture"
+                      class="opinion-box-user-info__user-profile-picture"
+                    />
+                    <div class="opinion-box-user-info__user-data">
+                      <p class="opinion-box-user-info__user-name">Tomasz Zieliński</p>
+                      <p class="opinion-box-user-info__user-proffession">
+                        Dyrektor IT, Corgix Sp. z o.o.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="opinion-box">
+                  <img
+                    src="./images/icons/citation-icon.png"
+                    loading="lazy"
+                    alt="citation mark icon"
+                    class="opinion-box__citation-icon"
+                  />
+                  <p class="opinion-box__opinion">
+                    Innowacyjne podejście do procesu zakupowego wprowadzone przez PIQ.one znacznie
+                    ułatwiło nam zarządzanie zamówieniami. Dzięki zastosowaniu sztucznej
+                    inteligencji, procesy stały się bardziej płynne i efektywne.
+                  </p>
+                  <div class="opinion-box-user-info">
+                    <img
+                      src="./images/icons/opinion-user-icon-two.png"
+                      loading="lazy"
+                      alt="user's profile picture"
+                      class="opinion-box-user-info__user-profile-picture"
+                    />
+                    <div class="opinion-box-user-info__user-data">
+                      <p class="opinion-box-user-info__user-name">Monika Grześkowiak</p>
+                      <p class="opinion-box-user-info__user-proffession">
+                        Członek Zarządu, Net Systemts
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-         </div>
-        <div class="swiper-slide">
-          
-          <div class="opinion-box ">
-          <img src="./images/icons/citation-icon.png" loading="lazy" alt="citation mark icon" class="opinion-box__citation-icon">
-          <p class="opinion-box__opinion">Innowacyjne podejście do procesu zakupowego wprowadzone przez PIQ.one znacznie ułatwiło nam zarządzanie zamówieniami. Dzięki zastosowaniu sztucznej inteligencji, procesy stały się bardziej płynne i efektywne.</p>
-          <div class="opinion-box-user-info">
-           <img src="./images/icons/opinion-user-icon-two.png" loading="lazy" alt="user's profile picture" class="opinion-box-user-info__user-profile-picture">
-           <div class="opinion-box-user-info__user-data">
-            <p class="opinion-box-user-info__user-name">Monika Grześkowiak</p>
-            <p class="opinion-box-user-info__user-proffession">Członek Zarządu, Net Systemts</p>
+          <!-- </div> -->
+        </section>
+        <section id="pricing" class="pricing-section container">
+          <div class="pricing-text-content">
+            <h2 class="pricing-text-content__heading" data-aos="fade-up">Cennik</h2>
+            <p class="pricing-text-content__paragraph" data-aos="fade-up">
+              Oferujemy <span class="bold">elastyczne plany rozliczeniowe</span>, dostosowane do
+              indywidualnych potrzeb każdego klienta. Zachęcamy do bezpośredniego kontaktu, aby
+              omówić szczegóły i znaleźć najkorzystniejsze dla Ciebie rozwiązanie.
+              <span class="bold">Skontaktuj się z nami już dziś</span>, aby dowiedzieć się więcej.
+            </p>
+            <button class="pricing-text-content__button app-button">Skontaktuj się z nami</button>
           </div>
+          <div class="pricing-visual-content">
+            <img
+              src="./images/pics/smartphone-pricing-pic.png"
+              loading="lazy"
+              alt="smartphone in a hand"
+              class="pricing-visual-content__smartphone-pic"
+              data-aos="fade-up"
+            />
           </div>
-        </div>
-        </div>
-        
-        </div>
-        </div>
-        </div>
-       
-      </section>
-      <section id="pricing" class="pricing-section container">
-        <div class="pricing-text-content" >
-          <h2 class="pricing-text-content__heading " data-aos="fade-up">Cennik</h2>
-          <p class="pricing-text-content__paragraph" data-aos="fade-up">Oferujemy <span class="bold">elastyczne plany rozliczeniowe</span>, dostosowane do indywidualnych potrzeb każdego klienta. Zachęcamy do bezpośredniego kontaktu, aby omówić szczegóły i znaleźć najkorzystniejsze dla Ciebie rozwiązanie. <span class="bold">Skontaktuj się z nami już dziś</span>, aby dowiedzieć się więcej.</p>
-          <button class="pricing-text-content__button app-button">Skontaktuj się z nami</button>
-        </div>
-        <div class="pricing-visual-content">
-          <img src="./images/pics/smartphone-pricing-pic.png" loading="lazy" alt="smartphone in a hand" class="pricing-visual-content__smartphone-pic">
-        </div>
-        <img src="./images/blobs/blob-pricing.png" loading="lazy" alt="" class="pricing-section__blob-pic">
-      </section>
-      <section class="contact-section" id="contact">
-        <h2 class="contact-section__heading section-title">Kontakt</h2>
-        <img src="./images/pics/robot-contact-pic.png" loading="lazy" alt="a robot holding a tablet" class="contact-section__robot-pic">
-        <img src="/images/pics/robot-shadow-pic.png" loading="lazy" alt="a robot shadow" class="contact-section__robot-shadow">
-        <form action="" class="contact-form" data-aos="fade-up">
-          <fieldset class="app-fieldset">
-            <div class="app-fieldset__box app-fieldset__box-select">
-              <img src="./images/icons/chevron-down-icon.jpg" alt="arrow down" class="app-fieldset__box-select--arrow">
-              <select id="contact-matter" class="app-select app-form-essential" >
-              <option value="0"  disabled selected>W jakiej sprawie się kontaktujesz?*
-              </option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
-              <option value="4">Option 4</option>
+          <img
+            src="./images/blobs/blob-pricing.png"
+            loading="lazy"
+            alt=""
+            class="pricing-section__blob-pic"
+          />
+        </section>
+        <section class="contact-section" id="contact">
+          <h2 class="contact-section__heading section-title">Kontakt</h2>
+          <img
+            src="./images/pics/robot-contact-pic.png"
+            loading="lazy"
+            alt="a robot holding a tablet"
+            class="contact-section__robot-pic"
+          />
+          <img
+            src="/images/pics/robot-shadow-pic.png"
+            loading="lazy"
+            alt="a robot shadow"
+            class="contact-section__robot-shadow"
+          />
+          <form action="" class="contact-form" data-aos="fade-up">
+            <fieldset class="app-fieldset">
+              <div class="app-fieldset__box app-fieldset__box-select">
+                <img
+                  src="./images/icons/chevron-down-icon.jpg"
+                  alt="arrow down"
+                  class="app-fieldset__box-select--arrow"
+                />
+                <select id="contact-matter" class="app-select app-form-essential">
+                  <option value="0" disabled selected>W jakiej sprawie się kontaktujesz?*</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                </select>
+                <p class="empty-field-warning-message">To pole nie może być puste</p>
+              </div>
+              <div class="app-fieldset__box">
+                <input
+                  class="app-input app-form-essential app-input-email"
+                  type="email"
+                  value=""
+                  placeholder="Email*"
+                />
+                <p class="empty-field-warning-message">To pole nie może być puste</p>
+              </div>
+              <div class="app-fieldset__box">
+                <input class="app-input" type="number" value="" placeholder="Telefon" />
+                <textarea
+                  id="message"
+                  class="contact-message app-textarea app-form-essential"
+                  placeholder="Wiadomość*"
+                ></textarea>
+                <p class="empty-field-warning-message">To pole nie może być puste</p>
+              </div>
+              <div class="privacy-policy">
+                <input
+                  class="app-input app-input-checkbox app-form-essential"
+                  type="checkbox"
+                  id="data-processing-checkbox"
+                />
+                <label for="data-processing-checkbox" class="privacy-policy__message"
+                  >* Wyrażam zgodę na przetwarzanie moich danych osobowych przez PIQ.one w związku
+                  ze złożonym przeze mnie zapytaniem. Więcej informacji w
+                  <a href="#" class="privacy-policy__link">polityce prywatności</a>.</label
+                >
+              </div>
+              <span class="warning-message"
+                >Musisz wyrazić zgodę na przetwarzanie danych osobowych!</span
+              >
+            </fieldset>
+            <div class="contact-section__bottom">
+              <button class="contact-section__submit-btn app-button">Wyślij wiadomość</button>
+              <p class="contact-section__legend">*pola obowiązkowe</p>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__company-info">&copy; <span class="footer__year">2023</span> PIQ.one</p>
+        <ul class="footer__list">
+          <li class="footer__list-elements">
+            <a href="" class="footer__link">Polityka prywatności</a>
+          </li>
+          <li class="footer__list-elements">
+            <select name="lang" id="language-select" class="nav__lang-select">
+              <option value="1">PL</option>
+              <option value="2">EN</option>
             </select>
-            <p class="empty-field-warning-message">To pole nie może być puste</p>
-            </div>
-            <div class="app-fieldset__box">
-              <input class="app-input app-form-essential app-input-email" type="email"  value="" placeholder="Email*">
-            <p class="empty-field-warning-message">To pole nie może być puste</p>
-            </div>
-            <div class="app-fieldset__box">
-              <input class="app-input" type="number" value="" placeholder="Telefon">
-            <textarea id="message" class="contact-message app-textarea app-form-essential" placeholder="Wiadomość*"></textarea>
-            <p class="empty-field-warning-message">To pole nie może być puste</p>
-            </div>
-            <div class="privacy-policy">
-            <input class="app-input app-input-checkbox app-form-essential " type="checkbox" id="data-processing-checkbox">
-            <label for="data-processing-checkbox" class="privacy-policy__message">* Wyrażam zgodę na przetwarzanie moich danych osobowych przez PIQ.one w związku ze złożonym przeze mnie zapytaniem. Więcej informacji w <a href="#" class="privacy-policy__link" >polityce prywatności</a>.</label>
-            </div>
-            <span class="warning-message">Musisz wyrazić zgodę na przetwarzanie danych osobowych!</span>
-          </fieldset>
-          <div class="contact-section__bottom">
-            <button class="contact-section__submit-btn app-button">Wyślij wiadomość</button>
-          <p class="contact-section__legend">*pola obowiązkowe</p>
-          </div>
-        </form>
-      </section>
-   </main>
-   <footer class="footer">
-   <p class="footer__company-info"> &copy;
-      <span class="footer__year">2023</span> PIQ.one</p>
-    <ul class="footer__list">
-      <li class="footer__list-elements">
-        <a href="" class="footer__link">Polityka prywatności</a>
-      </li>
-    </ul>
-   </footer>
+          </li>
+        </ul>
+      </footer>
     </div>
-   
+
     <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>

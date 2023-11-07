@@ -1,7 +1,6 @@
-import '../styles/main.scss'
-import AOS from 'aos'
+import '../styles/main.scss';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 
 import { setupCarousel } from './components/carousel';
 import { setupFormValidation } from './components/form-validation';
@@ -12,13 +11,4 @@ document.addEventListener('DOMContentLoaded', () => {
   setupFormValidation();
   setupNavigation();
   AOS.init();
-})
-
-
-
-
-
-
-
-
-
+});

@@ -1,142 +1,136 @@
 .pricing-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 71px;
-    background-color: var(--bg-color-pricing);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 71px;
+  background-color: var(--bg-color-pricing);
 
-    &__blob-pic {
-        position: absolute;
-        top: -168px;
-        right: 0;
-    }
+  &__blob-pic {
+    position: absolute;
+    top: -168px;
+    right: 0;
+  }
 }
 
 .pricing-text-content {
-    padding: 130px 0 ;
-    width: 35%;
+  padding: 130px 0;
+  width: 35%;
 
-    &__heading {
-        text-align: left;
-        padding-top: 0;
-        font-family: var(--font-secondary);
-        font-size: 4.8rem;
-        font-weight: 500;
-        color: var(--btn-header-color);
-    }
+  &__heading {
+    text-align: left;
+    padding-top: 0;
+    font-family: var(--font-secondary);
+    font-size: 4.8rem;
+    font-weight: 500;
+    color: var(--btn-header-color);
+  }
 
-    &__paragraph {
-        margin: 72px 0;
-        font-family: var(--font-primary);
-        font-size: 1.8rem;
-        font-weight: 400;
-        line-height: 180%;
-    }
+  &__paragraph {
+    margin: 72px 0;
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 180%;
+  }
 }
 
 .pricing-visual-content {
-    padding: 144px 0;
-    &__smartphone-pic {
-        width: 90%;
-    }
+  padding: 144px 0;
+  &__smartphone-pic {
+    width: 90%;
+  }
 }
-
-
-
 
 //RWD
 
 @media (max-width: 1200px) {
-    .pricing-visual-content {
-        &__smartphone-pic {
-            width: 100%;
-        }
+  .pricing-visual-content {
+    &__smartphone-pic {
+      width: 100%;
     }
+  }
 
-    .pricing-text-content {
-        width: 55%;
-    }
+  .pricing-text-content {
+    width: 55%;
+  }
 }
 
 @media (max-width: 1300px) {
-    .pricing-text-content {
-        padding: 100px 0 ;
-    }
+  .pricing-text-content {
+    padding: 100px 0;
+  }
 }
 
 @media (max-width: 992px) {
-    .pricing-section {
-        display: flex;
-        flex-direction: column;
-        gap: unset;
-    }
+  .pricing-section {
+    display: flex;
+    flex-direction: column;
+    gap: unset;
+  }
 
-    .pricing-visual-content {
-        &__smartphone-pic {
-            position: absolute;
-            width: 100%;
-            top: 39%;
-            left: -2%;
-            opacity: .2;
-        }
+  .pricing-visual-content {
+    &__smartphone-pic {
+      position: absolute;
+      width: 100%;
+      top: 39%;
+      left: -2%;
+      opacity: 0.2;
     }
+  }
 
-    .pricing-text-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%; 
-        z-index: 1;
-        padding: 90px 0 144px 0;
+  .pricing-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    padding: 90px 0 144px 0;
 
-        &__paragraph {
-            text-align: center;
-            font-size: 1.7rem;
-        }
+    &__paragraph {
+      text-align: center;
+      font-size: 1.7rem;
     }
+  }
 }
 
 @media (max-width: 768px) {
-    .pricing-section {
-        &__blob-pic {
-            width: 30%;
-        }
+  .pricing-section {
+    &__blob-pic {
+      width: 30%;
     }
-    .pricing-text-content {
-        &__paragraph {
-            font-size: 1.6rem;
-        }
+  }
+  .pricing-text-content {
+    &__paragraph {
+      font-size: 1.6rem;
     }
+  }
 }
 
 @media (max-width: 576px) {
-    .pricing-text-content {
-        padding: 60px 0 80px 0;
-        &__paragraph {
-            font-size: 1.5rem;
-        }
+  .pricing-text-content {
+    padding: 60px 0 80px 0;
+    &__paragraph {
+      font-size: 1.5rem;
     }
+  }
 
-    .pricing-visual-content {
-        padding: 144px 0 0 0;
-    
+  .pricing-visual-content {
+    padding: 144px 0 0 0;
+  }
+  .pricing-section {
+    &__blob-pic {
+      width: 30%;
+      top: -115px;
     }
-    .pricing-section {
-
-        &__blob-pic {
-            width: 30%;
-            top: -115px;
-        }
-    }
+  }
 }
 
 @media (max-width: 440px) {
-    .pricing-visual-content {
-        padding: 144px 0 0 0;
+  .pricing-visual-content {
+    padding: 144px 0 0 0;
 
-        &__smartphone-pic {
-            top: 50%;
-        }
-    
+    &__smartphone-pic {
+      top: 50%;
     }
+  }
 }
