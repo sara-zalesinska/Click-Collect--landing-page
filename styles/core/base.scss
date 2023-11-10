@@ -13,10 +13,9 @@ img {
 
 body {
   background-color: var(--bg-color-main);
+  position: relative;
 }
-// body {
-//   overflow-x: hidden;
-// }
+
 
 .container {
   width: 100%;
@@ -24,29 +23,7 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
-// @media (max-width: 1200px) {
-//   .container {
-//     padding: 0 20rem !important;
-//   }
-// }
 
-// @media (max-width: 992px) {
-//   .container {
-//     padding: 0 15rem !important;
-//   }
-// }
-
-// @media (max-width: 768px) {
-//   .container {
-//     padding: 0 10rem !important;
-//   }
-// }
-
-// @media (max-width: 576px) {
-//   .container {
-//     padding: 0 5rem !important;
-//   }
-// }
 
 html {
   font-size: 62.5%;
