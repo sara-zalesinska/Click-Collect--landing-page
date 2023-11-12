@@ -53,6 +53,8 @@
 
     &__privacy-policy-link {
         color: var(--btn-header-color);
+        text-decoration: underline;
+        cursor: pointer;
     }
 }
 

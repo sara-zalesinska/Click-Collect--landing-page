@@ -117,6 +117,12 @@ select::-ms-expand {
   align-items: center;
   margin-bottom: 24px;
 
+  &__link {
+    color: var(--btn-header-color);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   &__message {
     margin-left: 16px;
     font-family: var(--font-primary);
