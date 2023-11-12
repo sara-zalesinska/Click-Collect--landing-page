@@ -1,140 +1,137 @@
 .privacy-policy-modal {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 40%;
-        padding: 1.5rem;
-        background-color: var(--bg-color-main);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        z-index: 104;
-        // display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 1.5rem;
+  background-color: var(--bg-color-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  z-index: 104;
+  // display: none;
 
-        &__wrapper {
-            display: flex;
-            flex-direction: column;
-            max-height: 800px;
-            overflow-y: auto;
-        }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    overflow-y: auto;
+  }
 
-        &__top {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
-        }
+  &__top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-        &__close-window-btn {
-            background: none;
-            border: 1px solid transparent;
-            cursor: pointer;
-            padding: 5px;
+  &__close-window-btn {
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 5px;
 
-            &:focus {
-            outline: none;
-            border: 1px solid rgba(35, 30, 30, 0.5);
-            }
-        }
+    &:focus {
+      outline: none;
+      border: 1px solid rgba(35, 30, 30, 0.5);
+    }
+  }
 
-        &__close-window-icon {
-            height: 17px;
-        }
+  &__close-window-icon {
+    height: 17px;
+  }
 
-        &__heading {
-            font-family: var(--font-secondary);
-            font-size: 2.3rem;
-            font-weight: 500;
-            color: var(--btn-header-color);
-        }
+  &__heading {
+    font-family: var(--font-secondary);
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: var(--btn-header-color);
+  }
 
-        &__privacy-policy-paragraph {
-            margin: 20px 0 ;
-            font-family: var(--font-primary);
-            font-size: 1.5rem;
-            font-weight: 400;
-            line-height: 180%;
-        }
-    
+  &__privacy-policy-paragraph {
+    margin: 20px 0;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 180%;
+  }
 }
 
 .privacy-policy-modal-overlay {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.504);
-    z-index: 103;
-    // display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.504);
+  z-index: 103;
+  // display: none;
 }
 
 .privacy-policy-container {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 1400px) {
-    .privacy-policy-modal {
-        width: 50%;
-    }
+  .privacy-policy-modal {
+    width: 50%;
+  }
 }
 
 @media (max-width: 992px) {
-    .privacy-policy-modal {
-        width: 60%;
+  .privacy-policy-modal {
+    width: 60%;
 
-        &__wrapper {
-            max-height: 600px;
-        }
+    &__wrapper {
+      max-height: 600px;
     }
+  }
 }
 
 @media (max-width: 630px) {
-    .privacy-policy-modal {
-        width: 80%;
-    }
+  .privacy-policy-modal {
+    width: 80%;
+  }
 }
 
-
 @media (max-width: 540px) {
-    .privacy-policy-modal {
-
-        &__wrapper {
-            max-height: 500px;
-        }
-
-        &__privacy-policy-paragraph {
-            font-size: 1.4rem;
-        }
-    
-        &__heading {
-            font-size: 2.2rem;
-        }
-
-        &__close-window-icon {
-            height: 16px;
-        }
+  .privacy-policy-modal {
+    &__wrapper {
+      max-height: 500px;
     }
+
+    &__privacy-policy-paragraph {
+      font-size: 1.4rem;
+    }
+
+    &__heading {
+      font-size: 2.2rem;
+    }
+
+    &__close-window-icon {
+      height: 16px;
+    }
+  }
 }
 
 @media (max-width: 440px) {
-    .privacy-policy-modal {
-        width: 90%;
+  .privacy-policy-modal {
+    width: 90%;
 
-        &__wrapper {
-            max-height: 500px;
-        }
-
-        &__heading {
-            font-size: 2.1rem;
-        }
-
-        &__close-window-icon {
-            height: 15px;
-        }
-
-        &__privacy-policy-paragraph {
-            font-size: 1.3rem;
-        }
+    &__wrapper {
+      max-height: 500px;
     }
+
+    &__heading {
+      font-size: 2.1rem;
+    }
+
+    &__close-window-icon {
+      height: 15px;
+    }
+
+    &__privacy-policy-paragraph {
+      font-size: 1.3rem;
+    }
+  }
 }
