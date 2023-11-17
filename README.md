@@ -1,6 +1,6 @@
 # Click-Collect--landing-page
 
-Live version: 
+Live version: https://click-and-collect-project.netlify.app/
 
 ## Project description:
 
