@@ -9,7 +9,6 @@
   border: 1px solid var(--border-color);
   border-radius: 8px;
   z-index: 104;
-  // display: none;
 
   &__wrapper {
     display: flex;
@@ -40,20 +39,11 @@
   &__close-window-icon {
     height: 17px;
   }
+}
 
+.privacy-policy {
   &__heading {
-    font-family: var(--font-secondary);
-    font-size: 2.3rem;
-    font-weight: 500;
-    color: var(--btn-header-color);
-  }
-
-  &__privacy-policy-paragraph {
-    margin: 20px 0;
-    font-family: var(--font-primary);
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 180%;
+    margin-bottom: 20px !important;
   }
 }
 

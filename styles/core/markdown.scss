@@ -1,0 +1,113 @@
+.markdown {
+  h1 {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 8rem;
+    color: var(--btn-header-color);
+    margin: 5px 0;
+  }
+
+  h2 {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 6rem;
+    color: var(--btn-header-color);
+    margin: 5px 0;
+  }
+
+  h3 {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 4rem;
+    color: var(--btn-header-color);
+    margin: 5px 0;
+  }
+
+  h4 {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 2.3rem;
+    color: var(--btn-header-color);
+    margin: 5px 0;
+  }
+
+  h5 {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--btn-header-color);
+    margin: 5px 0;
+  }
+
+  p {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 180%;
+    margin: 5px 0;
+  }
+
+  span {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    line-height: 180%;
+    font-weight: 400;
+    margin: 5px 0;
+  }
+
+  strong {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    line-height: 180%;
+    font-weight: 700;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  ul,
+  ol {
+    display: block;
+    list-style: disc outside none;
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 180%;
+  }
+  ol {
+    list-style-type: decimal;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 180%;
+  }
+  li {
+    display: list-item;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 180%;
+  }
+
+  a {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    color: var(--btn-header-color);
+    text-decoration: underline;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:visited {
+      color: rgb(66, 25, 87);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: rgba(35, 30, 30, 0.5);
+    }
+  }
+}

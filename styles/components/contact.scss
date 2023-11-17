@@ -194,6 +194,7 @@ select::-ms-expand {
 
     &__robot-pic {
       bottom: 50px;
+      width: 90%;
     }
   }
 }
@@ -202,6 +203,7 @@ select::-ms-expand {
   .contact-section {
     &__robot-pic {
       bottom: 150px;
+      width: 100%;
     }
   }
 }
@@ -213,7 +215,9 @@ select::-ms-expand {
       align-items: center;
       gap: 20px;
     }
-
+    &__robot-pic {
+      bottom: 275px;
+    }
     &__legend {
       align-self: flex-end;
     }
@@ -241,6 +245,14 @@ select::-ms-expand {
 }
 
 @media (max-width: 576px) {
+  .contact-section {
+    &__robot-pic {
+      bottom: unset;
+      top: 30px;
+      opacity: 0.4;
+    }
+  }
+
   .contact-form {
     width: 100%;
     padding: 48px 20px;
@@ -284,6 +296,12 @@ select::-ms-expand {
       font-size: 1.1rem;
     }
   }
+  // .contact-section {
+  //   &__robot-pic {
+  //     bottom: unset;
+  //     top: 30px;
+  //   }
+  // }
 }
 
 // @media (max-width: 400px) {
